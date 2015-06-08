@@ -60,6 +60,7 @@
     <Content Include="CSS\Hoofdcategorie.css" />
     <Content Include="CSS\Inloggen.css" />
     <Content Include="CSS\Registreren.css" />
+    <Content Include="CSS\Subcategorie.css" />
     <Content Include="Hoofdcategorie.aspx" />
     <Content Include="Hoofdpagina.aspx" />
     <Content Include="CSS\Hoofdpagina.css" />
@@ -68,6 +69,7 @@
     <Content Include="CSS\Style.css" />
     <Content Include="Inloggen.aspx" />
     <Content Include="Registreren.aspx" />
+    <Content Include="Subcategorie.aspx" />
     <Content Include="Verlanglijst.aspx" />
     <Content Include="Web.config" />
     <Content Include="Winkelwagen.aspx" />
@@ -108,6 +110,13 @@
     </Compile>
     <Compile Include="Registreren.aspx.designer.cs">
       <DependentUpon>Registreren.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Subcategorie.aspx.cs">
+      <DependentUpon>Subcategorie.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Subcategorie.aspx.designer.cs">
+      <DependentUpon>Subcategorie.aspx</DependentUpon>
     </Compile>
     <Compile Include="Verlanglijst.aspx.cs">
       <DependentUpon>Verlanglijst.aspx</DependentUpon>

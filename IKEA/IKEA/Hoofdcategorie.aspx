@@ -7,29 +7,29 @@
     <div id="catcontainer">
         <div id="sublijsttekst">
             <ul class="catlist">
-                <li><a class="catlink" href="www.google.nl"><b>DB_HOOFCAT</b></a>
+                <li><b>DB_HOOFCAT</b>
                     <ul class="catlist">
-                        <li><a class="catlink" href="www.google.nl">DB_subcat</a></li>
-                        <li><a class="catlink" href="www.google.nl">DB_subcat</a></li>
-                        <li><a class="catlink" href="www.google.nl">DB_subcat</a></li>
+                        <li><a class="catlink" href="Subcategorie.aspx">DB_subcat</a></li>
+                        <li><a class="catlink" href="Subcategorie.aspx">DB_subcat</a></li>
+                        <li><a class="catlink" href="Subcategorie.aspx">DB_subcat</a></li>
                     </ul></li>
-                <li><a class="catlink" href="www.google.nl"><b>DB_HOOFCAT</b></a>
+                <li><b>DB_HOOFCAT</b>
                     <ul class="catlist">
-                        <li><a class="catlink" href="www.google.nl">DB_subcat</a></li>
-                        <li><a class="catlink" href="www.google.nl">DB_subcat</a></li>
-                        <li><a class="catlink" href="www.google.nl">DB_subcat</a></li>
+                        <li><a class="catlink" href="Subcategorie.aspx">DB_subcat</a></li>
+                        <li><a class="catlink" href="Subcategorie.aspx">DB_subcat</a></li>
+                        <li><a class="catlink" href="Subcategorie.aspx">DB_subcat</a></li>
                     </ul></li>
-                <li><a class="catlink" href="www.google.nl"><b>DB_HOOFCAT</b></a>
+                <li><b>DB_HOOFCAT</b>
                     <ul class="catlist">
-                        <li><a class="catlink" href="www.google.nl">DB_subcat</a></li>
-                        <li><a class="catlink" href="www.google.nl">DB_subcat</a></li>
-                        <li><a class="catlink" href="www.google.nl">DB_subcat</a></li>
+                        <li><a class="catlink" href="Subcategorie.aspx">DB_subcat</a></li>
+                        <li><a class="catlink" href="Subcategorie.aspx">DB_subcat</a></li>
+                        <li><a class="catlink" href="Subcategorie.aspx">DB_subcat</a></li>
                     </ul></li>
-                <li><a class="catlink" href="www.google.nl"><b><b>DB_HOOFCAT</b></b></a>
+                <li><b>DB_HOOFCAT</b>
                     <ul class="catlist">
-                        <li><a class="catlink" href="www.google.nl">DB_subcat</a></li>
-                        <li><a class="catlink" href="www.google.nl">DB_subcat</a></li>
-                        <li><a class="catlink" href="www.google.nl">DB_subcat</a></li>
+                        <li><a class="catlink" href="Subcategorie.aspx">DB_subcat</a></li>
+                        <li><a class="catlink" href="Subcategorie.aspx">DB_subcat</a></li>
+                        <li><a class="catlink" href="Subcategorie.aspx">DB_subcat</a></li>
                     </ul>
                 </li>
             </ul>

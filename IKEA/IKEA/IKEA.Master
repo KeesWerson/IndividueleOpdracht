@@ -38,7 +38,7 @@
             <section id="header" class = "header">
                 <nav id="nav">
                     <ul class="nav navbar-nav">
-                        <li><a href="Hoofdcategorie.aspx">Aanbiedingen</a></li>
+                        <li><a href="Registreren.aspx">Aanbiedingen</a></li>
                         <li><a href="Hoofdcategorie.aspx">Nieuw</a></li>
                         <li><a href="Hoofdcategorie.aspx">Tuin en balkon</a></li>
                         <li><a href="Hoofdcategorie.aspx">Woonkamer</a></li>

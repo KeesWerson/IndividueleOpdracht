@@ -1,0 +1,35 @@
+﻿.row {
+    width: 1000px;
+    height: 300px;
+}
+
+.item1 {
+    width: 235px;
+    height: 300px;
+    position: absolute;
+    background-color: beige;
+}
+
+.item2 {
+    margin-left: 255px;
+    width: 235px;
+    height: 300px;
+    position: absolute;
+    background-color: beige;
+}
+
+.item3 {
+    margin-left: 510px;
+    width: 235px;
+    height: 300px;
+    position: absolute;
+    background-color: beige;
+}
+
+.item4 {
+    margin-left: 765px;
+    width: 235px;
+    height: 300px;
+    position: absolute;
+    background-color: beige;
+}
