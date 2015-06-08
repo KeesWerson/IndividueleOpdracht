@@ -38,16 +38,16 @@
             <section id="header" class = "header">
                 <nav id="nav">
                     <ul class="nav navbar-nav">
-                        <li><a href="#home">Aanbiedingen</a></li>
-                        <li><a href="#about">Nieuw</a></li>
-                        <li><a href="#product">Tuin en balkon</a></li>
-                        <li><a href="#contact">Woonkamer</a></li>
-                        <li><a href="#contact">Slaapkamer</a></li>
-                        <li><a href="#contact">Keuken & apparatuur</a></li>
-                        <li><a href="#contact">badkamer</a></li>
-                        <li><a href="#contact">IKEA Kinderland</a></li>
-                        <li><a href="#contact">Werkplek</a></li>
-                        <li><a href="#contact">Textiel</a></li>
+                        <li><a href="Hoofdcategorie.aspx">Aanbiedingen</a></li>
+                        <li><a href="Hoofdcategorie.aspx">Nieuw</a></li>
+                        <li><a href="Hoofdcategorie.aspx">Tuin en balkon</a></li>
+                        <li><a href="Hoofdcategorie.aspx">Woonkamer</a></li>
+                        <li><a href="Hoofdcategorie.aspx">Slaapkamer</a></li>
+                        <li><a href="Hoofdcategorie.aspx">Keuken & apparatuur</a></li>
+                        <li><a href="Hoofdcategorie.aspx">badkamer</a></li>
+                        <li><a href="Hoofdcategorie.aspx">IKEA Kinderland</a></li>
+                        <li><a href="Hoofdcategorie.aspx">Werkplek</a></li>
+                        <li><a href="Hoofdcategorie.aspx">Textiel</a></li>
                     </ul>
                 </nav>
             </section>

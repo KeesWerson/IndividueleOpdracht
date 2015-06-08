@@ -57,8 +57,10 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CSS\Hoofdcategorie.css" />
     <Content Include="CSS\Inloggen.css" />
     <Content Include="CSS\Registreren.css" />
+    <Content Include="Hoofdcategorie.aspx" />
     <Content Include="Hoofdpagina.aspx" />
     <Content Include="CSS\Hoofdpagina.css" />
     <Content Include="Images\ikealogo.gif" />
@@ -71,6 +73,13 @@
     <Content Include="Winkelwagen.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Hoofdcategorie.aspx.cs">
+      <DependentUpon>Hoofdcategorie.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hoofdcategorie.aspx.designer.cs">
+      <DependentUpon>Hoofdcategorie.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Hoofdpagina.aspx.cs">
       <DependentUpon>Hoofdpagina.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
