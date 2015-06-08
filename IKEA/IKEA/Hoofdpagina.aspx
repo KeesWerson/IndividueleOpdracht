@@ -6,7 +6,7 @@
     <div class="largeimg">
         test1
     </div>
-    <br /> <!--GIT TESTING -->
+    <br />
     <div id="mediumcontainer">
         <div class="mediumimg1">
             test2
