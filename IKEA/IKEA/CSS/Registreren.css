@@ -1,0 +1,33 @@
+﻿h3 {
+    font-family: Calibri;
+    text-align: center;
+}
+
+h4 {
+    font-family: Calibri;
+}
+
+h6 {
+    font-family: Calibri;
+}
+
+hr {
+    margin-left:10px;
+    margin-right:10px;
+    border: 1px solid #cccccc;
+}
+
+#registratiecontainer {
+    font-family: Calibri;
+    margin-left: 265px;
+    margin-right: 265px;
+    width: 470px;
+}
+
+#registratie {
+    font-family: Calibri;
+    width: 470px;
+    height: 480px;
+    background-color: #f5f6f7;
+    border: 1px solid #cccccc;
+}

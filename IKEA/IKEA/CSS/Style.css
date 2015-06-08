@@ -2,10 +2,14 @@
     background-color: #ffffff;
 }
 
-a.nostyle {
+.nostyle {
     text-decoration: none;
     font-family: Calibri;
     color: #33a5fd;
+}
+
+.nostyle:hover {
+    text-decoration: underline;
 }
 
 #container {
@@ -80,7 +84,7 @@ a.nostyle {
 }
 /*Einde header*/
 
-/*In de footer*/
+/*In de footer:*/
 #footlayout1 {
     padding-top: 20px;
     padding-left: 5px;
@@ -153,7 +157,7 @@ a.nostyle {
     color: #2C3539;
 }
 
-.footlink:hover{
+.footlink:hover {
     text-decoration: underline;
 }
 /*Einde footer*/

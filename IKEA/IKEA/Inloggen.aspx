@@ -28,5 +28,5 @@
             <asp:Button ID="Registreer" runat="server" Text="Profiel aanmaken" />
         </div>
     </div>
-    <br /><br />
+    <br /><br /><br />
 </asp:Content>
