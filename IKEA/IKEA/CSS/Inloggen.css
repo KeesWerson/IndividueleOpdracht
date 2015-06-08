@@ -1,0 +1,39 @@
+﻿h3 {
+    font-family: Calibri;
+    text-align: center;
+}
+
+h6 {
+    font-family: Calibri;
+}
+
+hr {
+    margin-left:10px;
+    margin-right:10px;
+    border: 1px solid #cccccc;
+}
+
+.inlogsectie {
+    font-family: Calibri;
+    margin-left: 20px;
+    width: 470px;
+    height: 300px;
+    background-color: #f5f6f7;
+    position: absolute;
+    border: 1px solid #cccccc;
+}
+
+.registreersectie {
+    font-family: Calibri;
+    margin-left: 510px;
+    width: 470px;
+    height: 300px;
+    background-color: #f5f6f7;
+    position: absolute;
+    border: 1px solid #cccccc;
+}
+
+#inlogcontainer {
+    width: 1000px;
+    height: 300px;
+}

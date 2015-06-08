@@ -57,6 +57,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CSS\Inloggen.css" />
     <Content Include="Hoofdpagina.aspx" />
     <Content Include="CSS\Hoofdpagina.css" />
     <Content Include="Images\ikealogo.gif" />

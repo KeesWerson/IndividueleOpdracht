@@ -4,3 +4,9 @@ C:\Users\Kees\Documents\Visual Studio 2013\Projects\FontysPeriode3\IKEA\IKEA\bin
 C:\Users\Kees\Documents\Visual Studio 2013\Projects\FontysPeriode3\IKEA\IKEA\obj\Debug\IKEA.csprojResolveAssemblyReference.cache
 C:\Users\Kees\Documents\Visual Studio 2013\Projects\FontysPeriode3\IKEA\IKEA\obj\Debug\IKEA.dll
 C:\Users\Kees\Documents\Visual Studio 2013\Projects\FontysPeriode3\IKEA\IKEA\obj\Debug\IKEA.pdb
+C:\Users\Kees\Documents\GitHub\IndividueleOpdracht\IKEA\IKEA\bin\IKEA.dll.config
+C:\Users\Kees\Documents\GitHub\IndividueleOpdracht\IKEA\IKEA\bin\IKEA.dll
+C:\Users\Kees\Documents\GitHub\IndividueleOpdracht\IKEA\IKEA\bin\IKEA.pdb
+C:\Users\Kees\Documents\GitHub\IndividueleOpdracht\IKEA\IKEA\obj\Debug\IKEA.csprojResolveAssemblyReference.cache
+C:\Users\Kees\Documents\GitHub\IndividueleOpdracht\IKEA\IKEA\obj\Debug\IKEA.dll
+C:\Users\Kees\Documents\GitHub\IndividueleOpdracht\IKEA\IKEA\obj\Debug\IKEA.pdb
