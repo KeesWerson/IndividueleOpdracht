@@ -1,0 +1,25 @@
+﻿hr {
+    margin-left:10px;
+    margin-right:10px;
+    border: 1px solid #cccccc;
+}
+
+#itemcontainer {
+    margin-left: 100px;
+    margin-right: 100px;
+    width: 800px;
+    height: 500px;
+}
+
+#picture {
+    width: 450px;
+    height: 450px;
+    position: absolute;
+    background-color: beige;
+}
+
+#info {
+    margin-left: 490px;
+    width: 310px;
+    position: absolute;
+}

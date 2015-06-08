@@ -6,44 +6,44 @@
     [Naam categorie]<br />
     [omschrijing]<br /><br />
     <div class="row">
-        <a href="Hoofdpagina.aspx">
+        <a href="Item.aspx">
             <div class="item1">
                 ITEM1
             </div>
         </a>
-        <a href="Hoofdpagina.aspx">
+        <a href="Item.aspx">
             <div class="item2">
                 ITEM2
             </div>
         </a>
-        <a href="Hoofdpagina.aspx">
+        <a href="Item.aspx">
             <div class="item3">
                 ITEM3
             </div>
         </a>
-        <a href="Hoofdpagina.aspx">
+        <a href="Item.aspx">
             <div class="item4">
                 ITEM4
             </div>
         </a>
     </div><br />
     <div class="row">
-        <a href="Hoofdpagina.aspx">
+        <a href="Item.aspx">
             <div class="item1">
                 ITEM5
             </div>
         </a>
-        <a href="Hoofdpagina.aspx">
+        <a href="Item.aspx">
             <div class="item2">
                 ITEM6
             </div>
         </a>
-        <a href="Hoofdpagina.aspx">
+        <a href="Item.aspx">
             <div class="item3">
                 ITEM7
             </div>
         </a>
-        <a href="Hoofdpagina.aspx">
+        <a href="Item.aspx">
             <div class="item4">
                 ITEM8
             </div>
