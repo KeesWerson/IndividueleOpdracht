@@ -21,7 +21,10 @@
                 Welkom bij IKEA Nederland
             </div>
             <div id="zoekbalk">
-                zoeken
+                <form>
+                    <input type="text" name="tbzoeken"/>
+                    <input type="submit" name="btnzoeken" value="Zoek"/>
+                </form>
             </div>
             <div id="opties">
                 <div id="optieInhoud">
