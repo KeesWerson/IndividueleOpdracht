@@ -1,0 +1,55 @@
+﻿.largeimg {
+    width: 1000px;
+    height: 410px;
+    background-color: beige;
+}
+
+.mediumimg1 {
+    margin-left: 0px;
+    width: 490px;
+    height: 210px;
+    background-color: beige;
+    position: absolute;
+}
+
+.mediumimg2 {
+    margin-left: 510px;
+    width: 490px;
+    height: 210px;
+    background-color: beige;
+    position: absolute;
+}
+
+#mediumcontainer {
+    width: 1000px;
+    height: 210px;
+}
+
+.smallimg1 {
+    margin-left: 0px;
+    width: 320px;
+    height: 230px;
+    background-color: beige;
+    position: absolute;
+}
+
+.smallimg2 {
+    margin-left: 340px;
+    width: 320px;
+    height: 230px;
+    background-color: beige;
+    position: absolute;
+}
+
+.smallimg3 {
+    margin-left: 680px;
+    width: 320px;
+    height: 230px;
+    background-color: beige;
+    position: absolute;
+}
+
+#smallcontainer {
+    width: 1000px;
+    height: 230px;
+}

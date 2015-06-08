@@ -1,0 +1,112 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="IKEA.master.cs" Inherits="IKEA.IKEA" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" type="text/css" href="CSS/style.css" media="screen"/>
+</head>
+<body>
+    <!--De container is als het ware het frame waar alle inhoud van de site in zit -->
+    <div id="container">
+        <!-- Header van de website -->
+        <div id="headerlayer">
+            <div id="logo">
+                <a href="Hoofdpagina.aspx">
+                    <img src ="Images/ikealogo.gif" width="190px" height="55px"/>
+                </a>
+                Welkom bij IKEA Nederland
+            </div>
+            <div id="zoekbalk">
+                zoeken
+            </div>
+            <div id="opties">
+                <div id="optieInhoud">
+                    <a class="nostyle" href="Inloggen.aspx">Inloggen</a><br />
+                    <a class="nostyle" href="Verlanglijst.aspx">Mijn verlanglijstje</a><br />
+                    <a class="nostyle" href="Winkelwagen.aspx">Mijn winkelwagen</a>
+                </div>
+            </div>
+            <div id="winkelwagen">
+                <img src ="Images/Winkelwagen.jpg" width="100px" height="55px"/>
+            </div>
+        </div>
+        <!-- De navigatie-balk -->
+            <section id="header" class = "header">
+                <nav id="nav">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#home">Aanbiedingen</a></li>
+                        <li><a href="#about">Nieuw</a></li>
+                        <li><a href="#product">Tuin en balkon</a></li>
+                        <li><a href="#contact">Woonkamer</a></li>
+                        <li><a href="#contact">Slaapkamer</a></li>
+                        <li><a href="#contact">Keuken & apparatuur</a></li>
+                        <li><a href="#contact">badkamer</a></li>
+                        <li><a href="#contact">IKEA Kinderland</a></li>
+                        <li><a href="#contact">Werkplek</a></li>
+                        <li><a href="#contact">Textiel</a></li>
+                    </ul>
+                </nav>
+            </section>
+        <div><br /></div>
+        <!-- Hier worden de verschillende paginas in geladen (De content) -->
+        <form id="form1" runat="server">
+            <div>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">       
+                </asp:ContentPlaceHolder>
+            </div>
+        </form>
+        <!-- De footer van de website -->
+        <div id="footer">
+            <div id="footlayout1">
+                IKEA Vestigingen<br />
+                <a class="footlink" href="www.google.nl">Openingstijden</a><br />
+                <a class="footlink" href="www.google.nl">Alle vestigingen</a><br />
+                <a class="footlink" href="www.google.nl">Restaurant</a><br />
+                <a class="footlink" href="www.google.nl">Swedisch Food Market</a><br />
+                <a class="footlink" href="www.google.nl">Services</a><br />
+            </div>
+            <div id="footlayout2">
+                IKEA Webwinkel<br />
+                <a class="footlink" href="www.google.nl">Online winkelen</a><br />
+                <a class="footlink" href="www.google.nl">Bestellen</a><br />
+                <a class="footlink" href="www.google.nl">Betaalmogelijkheden</a><br />
+                <a class="footlink" href="www.google.nl">Bezorging</a><br />
+                <a class="footlink" href="www.google.nl">Retourneren</a><br />
+            </div>
+            <div id="footlayout3">
+                Dit is IKEA<br />
+                <a class="footlink" href="www.google.nl">Het IKEA concept</a><br />
+                <a class="footlink" href="www.google.nl">Democratisch design</a><br />
+                <a class="footlink" href="www.google.nl">Over de IKEA Group</a><br />
+                <a class="footlink" href="www.google.nl">Mens en millieu</a><br />
+                <a class="footlink" href="www.google.nl">Zonnepanelen</a><br />
+                <a class="footlink" href="www.google.nl">Nieuws over IKEA</a><br />
+            </div>
+            <div id="footlayout4">
+                Werken bij IKEA<br />
+                <a class="footlink" href="www.google.nl">Vacatures</a><br />
+                <a class="footlink" href="www.google.nl">IKEA voor HBO/WO</a><br />
+            </div>
+            <div id="footlayout5">
+                Handige links<br />
+                <a class="footlink" href="www.google.nl">Klantenservice</a><br />
+                <a class="footlink" href="www.google.nl">Veelgestelde vragen</a><br />
+                <a class="footlink" href="www.google.nl">Catalogus en brochures</a><br />
+                <a class="footlink" href="www.google.nl">IKEA cadeaupas</a><br />
+            </div>
+            <div id="ikeafamily">
+                <a class="footlink" href="www.google.nl">IKEA Family</a><br />
+                <a class="footlink" href="www.google.nl">Apps en mobiele site</a><br />
+                <a class="footlink" href="www.google.nl">Online planners</a>
+            </div>
+        </div>
+        <div id="footerline">
+            © Inter IKEA Systems B.V. 1999-2015 | Privacybeleid | Cookiebeleid | Gebruikersvoorwaarden |
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,207 @@
+﻿body {
+    background-color: #ffffff;
+}
+
+a.nostyle {
+    text-decoration: none;
+    font-family: Calibri;
+    color: #33a5fd;
+}
+
+#container {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#headerlayer {
+    width: 100%;
+    height: 75px;
+}
+
+#footer {
+    width: 100%;
+    height: 180px;
+    background-color: #eeeeee;
+}
+
+#footerline {
+    padding-top:15px;
+    padding-left:5px;
+    width: 100%;
+    height: 35px;
+    background-color: #666666;
+    color: #ebfff0;
+}
+
+/*In de header:*/
+#logo {
+    background-color: white;
+	width: 190px;
+	height: 75px;
+	margin-left: 0px;
+	margin-top: 0px;
+	position: absolute;
+    font-family: Calibri;
+    font-size: 13px;
+    color: #2C3539;
+}
+
+#zoekbalk {
+	width: 300px;
+	height: 75px;
+	margin-left: 190px;
+	margin-top: 0px;
+	position: absolute;
+}
+
+#opties {
+	width: 410px;
+	height: 75px;
+	margin-left: 490px;
+	margin-top: 0px;
+	position: absolute;
+}
+
+#optieInhoud {
+    margin-left: 250px;
+	margin-top: 0px;
+    width: 160px;
+	height: 75px;
+	position: absolute;
+}
+
+#winkelwagen {
+	width: 100px;
+	height: 75px;
+	margin-left: 900px;
+	margin-top: 0px;
+	position: absolute;
+}
+/*Einde header*/
+
+/*In de footer*/
+#footlayout1 {
+    padding-top: 20px;
+    padding-left: 5px;
+    font-weight: bold;
+    font-family: Calibri;
+    height: 180px;
+    width: 166px;
+    margin-left: 0px;
+    position: absolute;
+}
+
+#footlayout2 {
+    padding-top: 20px;
+    padding-left: 5px;
+    font-weight: bold;
+    font-family: Calibri;
+    height: 180px;
+    width: 166px;
+    margin-left: 166px;
+    position: absolute;
+}
+
+#footlayout3 {
+    padding-top: 20px;
+    padding-left: 5px;
+    font-weight: bold;
+    font-family: Calibri;
+    height: 180px;
+    width: 166px;
+    margin-left: 332px;
+    position: absolute;
+}
+
+#footlayout4 {
+    padding-top: 20px;
+    padding-left: 5px;
+    font-weight: bold;
+    font-family: Calibri;
+    height: 180px;
+    width: 166px;
+    margin-left: 498px;
+    position: absolute;
+}
+
+#footlayout5 {
+    padding-top: 20px;
+    padding-left: 5px;
+    font-weight: bold;
+    font-family: Calibri;
+    height: 180px;
+    width: 166px;
+    margin-left: 664px;
+    position: absolute;
+}
+
+#ikeafamily {
+    padding-top: 20px;
+    padding-left: 5px;
+    font-family: Calibri;
+    height: 180px;
+    width: 170px;
+    margin-left: 830px;
+    position: absolute;
+}
+
+.footlink {
+    text-decoration: none;
+    font-family: Calibri;
+    font-size: 13px;
+    color: #2C3539;
+}
+
+.footlink:hover{
+    text-decoration: underline;
+}
+/*Einde footer*/
+
+#navigatie {
+    background-color: blue;
+    width: 100%;
+    height: 35px;
+}
+
+/*Hier onder volgt de style voor de navigatie-balk*/
+#header{
+    width: 100%;
+    padding: 0px;
+    height: 37px;
+    background-color: #0051ba;
+    }
+
+#header ul{
+    list-style-type:none;
+    }
+
+#header ul li{
+    border: 2px solid black;
+	border-left-color: #407dcb;
+	border-right: #407dcb;
+	border-top-color: transparent;
+    border-bottom: transparent;
+    padding-left:0;
+    padding-right:0;
+    float:left;
+    background-color: #0051ba;
+    }
+
+#header ul li a{
+    font-family:Calibri;
+    color: #fffff8;
+    text-decoration:none;
+    line-height:35px; font-size:15px;
+    padding-left:5px;
+    padding-right:5px;
+    display: block;
+    }
+
+#header ul li a:hover{
+    background-color: #003b87;
+    }
+
+#nav {
+	width: 100%;
+}
