@@ -9,6 +9,8 @@
         <div id="registratie">
             <h3>Maak een profiel aan</h3>
             <hr /><br />
+            <asp:Label ID="lblGebruikersnaam" runat="server" Text="* Gebruikersnaam "></asp:Label>
+            <asp:TextBox ID="tbGebruikersnaam" runat="server"></asp:TextBox><br /><br />
             <asp:Label ID="lblVoornaam" runat="server" Text="* Voornaam "></asp:Label>
             <asp:TextBox ID="tbVoornaam" runat="server"></asp:TextBox><br /><br />
             <asp:Label ID="lblAchternaam" runat="server" Text="* Achternaam "></asp:Label>
@@ -25,7 +27,7 @@
             <asp:TextBox ID="tbWachtwoordOpnieuw" runat="server"></asp:TextBox><br /><br />
             <asp:CheckBox ID="cbVoorwaarden" runat="server" />
             <asp:Label ID="lblVoorwaarden" runat="server" Text="* Ik ga akkoord met de voorwaarden"></asp:Label>
-            <br /><hr /><br />
+            <br /><hr />
             <asp:Button ID="btnTerug" runat="server" Text="Terug" />
             <asp:Button ID="btnOpslaan" runat="server" Text="Opslaan en doorgaan" />
         </div>

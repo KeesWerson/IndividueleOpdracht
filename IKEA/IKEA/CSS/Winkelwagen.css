@@ -1,0 +1,74 @@
+﻿h3 {
+    font-family: Calibri;
+}
+
+hr {
+    margin-left:10px;
+    margin-right:10px;
+    border: 1px solid #cccccc;
+}
+
+p {
+    margin-left: 50px;
+}
+
+a {
+    text-decoration: none;
+    font-family: Calibri;
+    color: #33a5fd;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.productomschrijving {
+    margin-left: 0px;
+    width: 150px;
+    position: absolute;
+}
+
+.prijs {
+    margin-left: 150px;
+    width: 120px;
+    position: absolute;
+}
+
+.aantal {
+    margin-left: 270px;
+    width: 120px;
+    position: absolute;
+}
+
+.totaal {
+    margin-left: 390px;
+    width: 120px;
+    position: absolute;
+}
+
+.verwijder {
+    margin-left: 510px;
+    width: 240px;
+    position: absolute;
+}
+
+.afbeelding {
+    margin-top: -20px;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    background-color: beige;
+}
+
+#winkelwagencontainer {
+    margin-left: 100px;
+    width: 800px;
+}
+
+.rowcontainer {
+    font-family: Calibri;
+    margin-left: 0px;
+    width: 800px;
+    position: fixed;
+}
