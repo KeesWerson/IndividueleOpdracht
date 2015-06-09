@@ -57,6 +57,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CSS\Error.css" />
     <Content Include="CSS\Hoofdcategorie.css" />
     <Content Include="CSS\Inloggen.css" />
     <Content Include="CSS\Item.css" />
@@ -70,6 +71,7 @@
     <Content Include="CSS\Style.css" />
     <Content Include="Inloggen.aspx" />
     <Content Include="Item.aspx" />
+    <Content Include="NotImplemented.aspx" />
     <Content Include="Registreren.aspx" />
     <Content Include="Subcategorie.aspx" />
     <Content Include="Verlanglijst.aspx" />
@@ -111,6 +113,13 @@
     </Compile>
     <Compile Include="Item.aspx.designer.cs">
       <DependentUpon>Item.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NotImplemented.aspx.cs">
+      <DependentUpon>NotImplemented.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NotImplemented.aspx.designer.cs">
+      <DependentUpon>NotImplemented.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Registreren.aspx.cs">

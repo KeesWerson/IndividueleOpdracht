@@ -34,7 +34,9 @@
                 </div>
             </div>
             <div id="winkelwagen">
-                <img src ="Images/Winkelwagen.jpg" width="100px" height="55px"/>
+                <a href="Winkelwagen.aspx">
+                    <img src ="Images/Winkelwagen.jpg" width="100px" height="55px"/>
+                </a>
             </div>
         </div>
         <!-- De navigatie-balk -->
@@ -42,7 +44,7 @@
                 <nav id="nav">
                     <ul class="nav navbar-nav">
                         <li><a href="Registreren.aspx">Aanbiedingen</a></li>
-                        <li><a href="Hoofdcategorie.aspx">Nieuw</a></li>
+                        <li><a href="Hoofdpagina.aspx">Nieuw</a></li>
                         <li><a href="Hoofdcategorie.aspx">Tuin en balkon</a></li>
                         <li><a href="Hoofdcategorie.aspx">Woonkamer</a></li>
                         <li><a href="Hoofdcategorie.aspx">Slaapkamer</a></li>
@@ -66,45 +68,45 @@
         <div id="footer">
             <div id="footlayout1">
                 IKEA Vestigingen<br />
-                <a class="footlink" href="www.google.nl">Openingstijden</a><br />
-                <a class="footlink" href="www.google.nl">Alle vestigingen</a><br />
-                <a class="footlink" href="www.google.nl">Restaurant</a><br />
-                <a class="footlink" href="www.google.nl">Swedisch Food Market</a><br />
-                <a class="footlink" href="www.google.nl">Services</a><br />
+                <a class="footlink" href="NotImplemented.aspx">Openingstijden</a><br />
+                <a class="footlink" href="NotImplemented.aspx">Alle vestigingen</a><br />
+                <a class="footlink" href="NotImplemented.aspx">Restaurant</a><br />
+                <a class="footlink" href="NotImplemented.aspx">Swedisch Food Market</a><br />
+                <a class="footlink" href="NotImplemented.aspx">Services</a><br />
             </div>
             <div id="footlayout2">
                 IKEA Webwinkel<br />
-                <a class="footlink" href="www.google.nl">Online winkelen</a><br />
-                <a class="footlink" href="www.google.nl">Bestellen</a><br />
-                <a class="footlink" href="www.google.nl">Betaalmogelijkheden</a><br />
-                <a class="footlink" href="www.google.nl">Bezorging</a><br />
-                <a class="footlink" href="www.google.nl">Retourneren</a><br />
+                <a class="footlink" href="NotImplemented.aspx">Online winkelen</a><br />
+                <a class="footlink" href="NotImplemented.aspx">Bestellen</a><br />
+                <a class="footlink" href="NotImplemented.aspx">Betaalmogelijkheden</a><br />
+                <a class="footlink" href="NotImplemented.aspx">Bezorging</a><br />
+                <a class="footlink" href="NotImplemented.aspx">Retourneren</a><br />
             </div>
             <div id="footlayout3">
                 Dit is IKEA<br />
-                <a class="footlink" href="www.google.nl">Het IKEA concept</a><br />
-                <a class="footlink" href="www.google.nl">Democratisch design</a><br />
-                <a class="footlink" href="www.google.nl">Over de IKEA Group</a><br />
-                <a class="footlink" href="www.google.nl">Mens en millieu</a><br />
-                <a class="footlink" href="www.google.nl">Zonnepanelen</a><br />
-                <a class="footlink" href="www.google.nl">Nieuws over IKEA</a><br />
+                <a class="footlink" href="NotImplemented.aspx">Het IKEA concept</a><br />
+                <a class="footlink" href="NotImplemented.aspx">Democratisch design</a><br />
+                <a class="footlink" href="NotImplemented.aspx">Over de IKEA Group</a><br />
+                <a class="footlink" href="NotImplemented.aspx">Mens en millieu</a><br />
+                <a class="footlink" href="NotImplemented.aspx">Zonnepanelen</a><br />
+                <a class="footlink" href="NotImplemented.aspx">Nieuws over IKEA</a><br />
             </div>
             <div id="footlayout4">
                 Werken bij IKEA<br />
-                <a class="footlink" href="www.google.nl">Vacatures</a><br />
-                <a class="footlink" href="www.google.nl">IKEA voor HBO/WO</a><br />
+                <a class="footlink" href="NotImplemented.aspx">Vacatures</a><br />
+                <a class="footlink" href="NotImplemented.aspx">IKEA voor HBO/WO</a><br />
             </div>
             <div id="footlayout5">
                 Handige links<br />
-                <a class="footlink" href="www.google.nl">Klantenservice</a><br />
-                <a class="footlink" href="www.google.nl">Veelgestelde vragen</a><br />
-                <a class="footlink" href="www.google.nl">Catalogus en brochures</a><br />
-                <a class="footlink" href="www.google.nl">IKEA cadeaupas</a><br />
+                <a class="footlink" href="NotImplemented.aspx">Klantenservice</a><br />
+                <a class="footlink" href="NotImplemented.aspx">Veelgestelde vragen</a><br />
+                <a class="footlink" href="NotImplemented.aspx">Catalogus en brochures</a><br />
+                <a class="footlink" href="NotImplemented.aspx">IKEA cadeaupas</a><br />
             </div>
             <div id="ikeafamily">
-                <a class="footlink" href="www.google.nl">IKEA Family</a><br />
-                <a class="footlink" href="www.google.nl">Apps en mobiele site</a><br />
-                <a class="footlink" href="www.google.nl">Online planners</a>
+                <a class="footlink" href="NotImplemented.aspx">IKEA Family</a><br />
+                <a class="footlink" href="NotImplemented.aspx">Apps en mobiele site</a><br />
+                <a class="footlink" href="NotImplemented.aspx">Online planners</a>
             </div>
         </div>
         <div id="footerline">
