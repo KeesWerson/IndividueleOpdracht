@@ -5,34 +5,38 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <br />
     <div id="catcontainer">
-        <div id="sublijsttekst">
-            <ul class="catlist">
-                <li><b>DB_HOOFCAT</b>
-                    <ul class="catlist">
-                        <li><a class="catlink" href="Subcategorie.aspx">DB_subcat</a></li>
-                        <li><a class="catlink" href="Subcategorie.aspx">DB_subcat</a></li>
-                        <li><a class="catlink" href="Subcategorie.aspx">DB_subcat</a></li>
-                    </ul></li>
-                <li><b>DB_HOOFCAT</b>
-                    <ul class="catlist">
-                        <li><a class="catlink" href="Subcategorie.aspx">DB_subcat</a></li>
-                        <li><a class="catlink" href="Subcategorie.aspx">DB_subcat</a></li>
-                        <li><a class="catlink" href="Subcategorie.aspx">DB_subcat</a></li>
-                    </ul></li>
-                <li><b>DB_HOOFCAT</b>
-                    <ul class="catlist">
-                        <li><a class="catlink" href="Subcategorie.aspx">DB_subcat</a></li>
-                        <li><a class="catlink" href="Subcategorie.aspx">DB_subcat</a></li>
-                        <li><a class="catlink" href="Subcategorie.aspx">DB_subcat</a></li>
-                    </ul></li>
-                <li><b>DB_HOOFCAT</b>
-                    <ul class="catlist">
-                        <li><a class="catlink" href="Subcategorie.aspx">DB_subcat</a></li>
-                        <li><a class="catlink" href="Subcategorie.aspx">DB_subcat</a></li>
-                        <li><a class="catlink" href="Subcategorie.aspx">DB_subcat</a></li>
-                    </ul>
-                </li>
-            </ul>
+        <!-- Dynamische plek waar de Hoofd- en subcategoriee worden gegenereerd. -->
+        <div runat="server" id="contentCategorieLink">
+            <!-- Voorbeeld van hoe de gegenereerde code er uit komt te zien -->
+            <!--<div id="sublijsttekst">
+                <ul class="catlist">
+                    <li><b>DB_HOOFCAT</b>
+                        <ul class="catlist">
+                            <li><a class="catlink" href="Subcategorie.aspx">DB_subcat</a></li>
+                            <li><a class="catlink" href="Subcategorie.aspx">DB_subcat</a></li>
+                            <li><a class="catlink" href="Subcategorie.aspx">DB_subcat</a></li>
+                        </ul></li>
+                    <li><b>DB_HOOFCAT</b>
+                        <ul class="catlist">
+                            <li><a class="catlink" href="Subcategorie.aspx">DB_subcat</a></li>
+                            <li><a class="catlink" href="Subcategorie.aspx">DB_subcat</a></li>
+                            <li><a class="catlink" href="Subcategorie.aspx">DB_subcat</a></li>
+                        </ul></li>
+                    <li><b>DB_HOOFCAT</b>
+                        <ul class="catlist">
+                            <li><a class="catlink" href="Subcategorie.aspx">DB_subcat</a></li>
+                            <li><a class="catlink" href="Subcategorie.aspx">DB_subcat</a></li>
+                            <li><a class="catlink" href="Subcategorie.aspx">DB_subcat</a></li>
+                        </ul></li>
+                    <li><b>DB_HOOFCAT</b>
+                        <ul class="catlist">
+                            <li><a class="catlink" href="Subcategorie.aspx">DB_subcat</a></li>
+                            <li><a class="catlink" href="Subcategorie.aspx">DB_subcat</a></li>
+                            <li><a class="catlink" href="Subcategorie.aspx">DB_subcat</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>-->
         </div>
         <div id="sublijstafb">
             <div class="largeimg">

@@ -140,6 +140,7 @@
     <Compile Include="Subcategorie.aspx.designer.cs">
       <DependentUpon>Subcategorie.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Klassen\SubCategorieClass.cs" />
     <Compile Include="Verlanglijst.aspx.cs">
       <DependentUpon>Verlanglijst.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
