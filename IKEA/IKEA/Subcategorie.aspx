@@ -3,8 +3,8 @@
     <link rel="stylesheet" type="text/css" href="CSS/Subcategorie.css" media="screen"/>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    [Naam categorie]<br />
-    [omschrijing]<br /><br />
+    <h2><asp:Label ID="lblCategorie" runat="server" Text="[Naam categorie]"></asp:Label></h2>
+    <p><asp:Label ID="lblCatOmschrijving" runat="server" Text="[omschrijing]"></asp:Label></p><br /><br />
     <div class="row">
         <a href="Item.aspx">
             <div class="item1">

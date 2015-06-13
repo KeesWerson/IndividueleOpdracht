@@ -10,3 +10,4 @@ C:\Users\Kees\Documents\GitHub\IndividueleOpdracht\IKEA\IKEA\bin\IKEA.pdb
 C:\Users\Kees\Documents\GitHub\IndividueleOpdracht\IKEA\IKEA\obj\Debug\IKEA.csprojResolveAssemblyReference.cache
 C:\Users\Kees\Documents\GitHub\IndividueleOpdracht\IKEA\IKEA\obj\Debug\IKEA.dll
 C:\Users\Kees\Documents\GitHub\IndividueleOpdracht\IKEA\IKEA\obj\Debug\IKEA.pdb
+C:\Users\Kees\Documents\GitHub\IndividueleOpdracht\IKEA\IKEA\bin\Oracle.ManagedDataAccess.dll

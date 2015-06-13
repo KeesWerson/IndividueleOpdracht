@@ -8,14 +8,14 @@
             test
         </div>
         <div id="info">
-            [NAAM]<br />
-            [SOORT OMSCHR]<br />
-            [KOSTEN]<br />
-            [ART.NR]<br /><br />
+            <asp:Label ID="lblNaam" runat="server" Text="[NAAM]"></asp:Label><br />
+            <asp:Label ID="lblSoortOmschr" runat="server" Text="[SOORT OMSCHR]"></asp:Label><br />
+            <asp:Label ID="lblKosten" runat="server" Text="[KOSTEN]"></asp:Label><br />
+            <asp:Label ID="lblArtNr" runat="server" Text="[ART.NR]"></asp:Label><br /><br />
 
-            [OMSCHRIJVING]<br /><br />
+            <asp:Label ID="lblOmschrijving" runat="server" Text="[OMSCHRIJVING]"></asp:Label><br /><br />
 
-            <asp:TextBox ID="tbAantal" runat="server"></asp:TextBox><br />
+            <asp:TextBox ID="tbAantal" runat="server"></asp:TextBox><br /><br />
             <asp:Button ID="btnWinkelwagen" runat="server" Text="In winkelwagen" /><br />
             <asp:Button ID="btnVerlanglijst" runat="server" Text="Verlanglijstje" />
             <hr />

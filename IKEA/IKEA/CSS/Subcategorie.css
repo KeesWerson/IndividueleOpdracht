@@ -1,4 +1,12 @@
-﻿.row {
+﻿h2 {
+    font-family: Calibri;
+}
+
+p {
+    font-family: Calibri;
+}
+
+.row {
     width: 1000px;
     height: 300px;
 }
