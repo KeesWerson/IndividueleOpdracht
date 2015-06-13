@@ -38,22 +38,25 @@
                 </ul>
             </div>-->
         </div>
-        <div id="sublijstafb">
-            <div class="largeimg">
-                test1
+        <!--<div runat="server" id="contentCategorieAfbeelding">-->
+            <!-- Voorbeeld van hoe de gegenereerde code er uit komt te zien -->
+            <div id="sublijstafb">
+                <div class="largeimg">
+                    <img src ="Images/ikealogo.gif" width="780px" height="400px"/>
+                </div>
+                <br />
+                <div id="mediumcontainer">
+                    <div class="mediumimg">
+                        <img src ="Images/ikealogo.gif" width="500px" height="539px"/>
+                    </div>
+                    <div class="cubeimg1">
+                        <img src ="Images/ikealogo.gif" width="260px" height="260px"/>
+                    </div>
+                    <div class="cubeimg2">
+                        <img src ="Images/ikealogo.gif" width="260px" height="260px"/>
+                    </div>
+                </div>
             </div>
-            <br />
-            <div id="mediumcontainer">
-                <div class="mediumimg">
-                    test2
-                </div>
-                <div class="cubeimg1">
-                    test3.1
-                </div>
-                <div class="cubeimg2">
-                    test3.2
-                </div>
-            </div>
-        </div>
+        <!--</div>-->
     </div>
 </asp:Content>

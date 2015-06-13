@@ -19,6 +19,8 @@ namespace IKEA
         //list opgeslagen zodat ik voor iedere gevonden categorie de bijhorende
         //sub-subcategorieen kan zoeken.
         List<SubCategorieClass> Subcategorieen = new List<SubCategorieClass>();
+        //fields
+        int teller = 1;
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -40,7 +42,11 @@ namespace IKEA
                 DbDataReader reader = com.ExecuteReader();
                 try
                 {
-                    contentCategorieLink.InnerHtml = "<div id=" + "sublijsttekst" + "><ul class=" + "catlist" + ">";
+                    /// <summary>
+                    /// Het maken van de menu-structuur
+                    /// </summary>
+                    /// 
+                    contentCategorieLink.InnerHtml = "<div id=sublijsttekst><ul class=catlist>";
                     //Eerst haal ik alle Subcategorieen op
                     while (reader.Read())
                     {
@@ -51,17 +57,48 @@ namespace IKEA
                     //Ook voeg ik deze toe aan de div
                     foreach (SubCategorieClass categorie in Subcategorieen)
                     {
-                        contentCategorieLink.InnerHtml += "<li><b>" + categorie.CatName + "</b><ul class=" + "catlist" + ">";
+                        contentCategorieLink.InnerHtml += "<li><b>" + categorie.CatName + "</b><ul class=catlist>";
                         com.CommandText = "SELECT categorienaam FROM categorie WHERE subcategorieID = " + categorie.SubCatID;
                         reader = com.ExecuteReader();
                         while (reader.Read())
                         {
                             //Iedere sub-subcategorie toevoegen aan de subcategorie
-                            contentCategorieLink.InnerHtml += "<li><a class=" + "catlink" + " href=" + "Subcategorie.aspx" + ">" + reader.GetString(0) + "</a></li>";
+                            contentCategorieLink.InnerHtml += "<li><a class=catlink href=Subcategorie.aspx>" + reader.GetString(0) + "</a></li>";
                         }
                         contentCategorieLink.InnerHtml += "</ul></li>";
                     }
                     contentCategorieLink.InnerHtml += "</ul></div>";
+
+                    /// <summary>
+                    /// Het inladen van de juiste afbeeldingen
+                    /// </summary>
+                    /// 
+                    contentCategorieAfbeelding.InnerHtml = "<div id=" + "sublijstafb" + "><div class=" + "largeimg" + "><img src =";
+                    //De grote afbeelding
+                    com.CommandText = "SELECT utl_raw.cast_to_varchar2(dbms_lob.substr(afbeelding)) FROM catafbeelding WHERE formaat = 'groot' AND categorieID = 2";
+                    reader = com.ExecuteReader();
+                    reader.Read();
+                    contentCategorieAfbeelding.InnerHtml += reader.GetString(0); 
+                    reader.Close();
+                    contentCategorieAfbeelding.InnerHtml += " width=780px height=400px/></div><br /><div id=mediumcontainer><div class=mediumimg><img src =";
+                    //De middel afbeelding
+                    com.CommandText = "SELECT utl_raw.cast_to_varchar2(dbms_lob.substr(afbeelding)) FROM catafbeelding WHERE formaat = 'middel' AND categorieID = 2";
+                    reader = com.ExecuteReader();
+                    reader.Read();
+                    contentCategorieAfbeelding.InnerHtml += reader.GetString(0);
+                    reader.Close();
+                    contentCategorieAfbeelding.InnerHtml += " width=500px height=539px/></div>";
+                    //De kleine afbeeldingen
+                    com.CommandText = "SELECT utl_raw.cast_to_varchar2(dbms_lob.substr(afbeelding)) FROM catafbeelding WHERE formaat = 'klein' AND categorieID = 2";
+                    reader = com.ExecuteReader();
+                    while (reader.Read())
+                    {
+                        contentCategorieAfbeelding.InnerHtml += "<div class=cubeimg"+teller+"><img src =";
+                        contentCategorieAfbeelding.InnerHtml += reader.GetString(0);
+                        contentCategorieAfbeelding.InnerHtml += " width=260px height=260px/></div>";
+                        teller++;
+                    }         
+                    contentCategorieAfbeelding.InnerHtml += "</div></div>";
                 }
                 catch (NullReferenceException)
                 {

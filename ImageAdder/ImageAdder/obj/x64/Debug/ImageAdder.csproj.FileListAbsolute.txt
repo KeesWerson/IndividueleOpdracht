@@ -1,0 +1,8 @@
+C:\Users\Kees\Documents\GitHub\IndividueleOpdracht\ImageAdder\ImageAdder\bin\x64\Debug\ImageAdder.exe.config
+C:\Users\Kees\Documents\GitHub\IndividueleOpdracht\ImageAdder\ImageAdder\bin\x64\Debug\ImageAdder.exe
+C:\Users\Kees\Documents\GitHub\IndividueleOpdracht\ImageAdder\ImageAdder\bin\x64\Debug\ImageAdder.pdb
+C:\Users\Kees\Documents\GitHub\IndividueleOpdracht\ImageAdder\ImageAdder\obj\x64\Debug\ImageAdder.Form1.resources
+C:\Users\Kees\Documents\GitHub\IndividueleOpdracht\ImageAdder\ImageAdder\obj\x64\Debug\ImageAdder.Properties.Resources.resources
+C:\Users\Kees\Documents\GitHub\IndividueleOpdracht\ImageAdder\ImageAdder\obj\x64\Debug\ImageAdder.csproj.GenerateResource.Cache
+C:\Users\Kees\Documents\GitHub\IndividueleOpdracht\ImageAdder\ImageAdder\obj\x64\Debug\ImageAdder.exe
+C:\Users\Kees\Documents\GitHub\IndividueleOpdracht\ImageAdder\ImageAdder\obj\x64\Debug\ImageAdder.pdb

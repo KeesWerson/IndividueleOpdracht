@@ -77,6 +77,7 @@
     <Content Include="Item.aspx" />
     <Content Include="NotImplemented.aspx" />
     <Content Include="Registreren.aspx" />
+    <Content Include="Sitebeheer.aspx" />
     <Content Include="Subcategorie.aspx" />
     <Content Include="Verlanglijst.aspx" />
     <Content Include="Web.config" />
@@ -118,6 +119,7 @@
     <Compile Include="Item.aspx.designer.cs">
       <DependentUpon>Item.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Klassen\FolderBrowser.cs" />
     <Compile Include="NotImplemented.aspx.cs">
       <DependentUpon>NotImplemented.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -132,6 +134,13 @@
     </Compile>
     <Compile Include="Registreren.aspx.designer.cs">
       <DependentUpon>Registreren.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sitebeheer.aspx.cs">
+      <DependentUpon>Sitebeheer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sitebeheer.aspx.designer.cs">
+      <DependentUpon>Sitebeheer.aspx</DependentUpon>
     </Compile>
     <Compile Include="Subcategorie.aspx.cs">
       <DependentUpon>Subcategorie.aspx</DependentUpon>

@@ -68,7 +68,7 @@
         <div id="footer">
             <div id="footlayout1">
                 IKEA Vestigingen<br />
-                <a class="footlink" href="NotImplemented.aspx">Openingstijden</a><br />
+                <a class="footlink" href="Sitebeheer.aspx">Openingstijden</a><br />
                 <a class="footlink" href="NotImplemented.aspx">Alle vestigingen</a><br />
                 <a class="footlink" href="NotImplemented.aspx">Restaurant</a><br />
                 <a class="footlink" href="NotImplemented.aspx">Swedisch Food Market</a><br />

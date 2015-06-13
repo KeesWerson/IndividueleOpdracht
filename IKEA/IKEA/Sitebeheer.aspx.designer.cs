@@ -10,24 +10,24 @@
 namespace IKEA {
     
     
-    public partial class Hoofdcategorie {
+    public partial class Sitebeheer {
         
         /// <summary>
-        /// contentCategorieLink control.
+        /// tbPath control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl contentCategorieLink;
+        protected global::System.Web.UI.WebControls.TextBox tbPath;
         
         /// <summary>
-        /// contentCategorieAfbeelding control.
+        /// btnBrowse control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl contentCategorieAfbeelding;
+        protected global::System.Web.UI.WebControls.Button btnBrowse;
     }
 }
