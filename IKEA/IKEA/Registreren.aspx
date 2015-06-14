@@ -19,13 +19,13 @@
             <asp:TextBox ID="tbAchternaam" runat="server"></asp:TextBox>
             <asp:Label ID="lblAchternaamError" runat="server" Text="verplicht veld" ForeColor="Red" Visible="False"></asp:Label><br /><br />
             <asp:Label ID="lblTelnrMobiel" runat="server" Text="Telefoonnummer mobiel "></asp:Label>
-            <asp:TextBox ID="tbTelnrMobiel" runat="server"></asp:TextBox><br /><br />
+            <asp:TextBox ID="tbTelnrMobiel" runat="server" MaxLength="10" Width="73px"></asp:TextBox><br /><br />
             <asp:Label ID="lblEmail" runat="server" Text="* E-mailadres "></asp:Label>
             <asp:TextBox ID="tbEmail" runat="server"></asp:TextBox>
             <asp:Label ID="lblEmailError" runat="server" Text="verplicht veld" ForeColor="Red" Visible="False"></asp:Label><br /><br />
             <asp:Label ID="lblEmailOpnieuw" runat="server" Text="* E-mail opnieuw invullen "></asp:Label>
             <asp:TextBox ID="tbEmailOpnieuw" runat="server"></asp:TextBox>
-            <asp:Label ID="lblEmailOpnieuwError" runat="server" Text="verplicht veld" ForeColor="Red" Visible="False"></asp:Label><br /><br />
+            <asp:Label ID="lblEmailOpnieuwError" runat="server" Text="verplicht Sveld" ForeColor="Red" Visible="False"></asp:Label><br /><br />
             <asp:Label ID="lblWachtwoord" runat="server" Text="* Wachtwoord "></asp:Label>
             <asp:TextBox ID="tbWachtwoord" runat="server"></asp:TextBox>
             <asp:Label ID="lblWachtwoordError" runat="server" Text="verplicht veld" ForeColor="Red" Visible="False"></asp:Label><br /><br />
