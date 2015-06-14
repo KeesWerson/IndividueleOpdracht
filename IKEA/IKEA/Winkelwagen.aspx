@@ -24,44 +24,47 @@
             </div>
         </div>
         <br /><hr /><br />
-        <div class="rowcontainer">
-            <div class="productomschrijving">
-                <div class="afbeelding">
-                    test
+        <div runat="server" id="contentWinkelwagen">
+            <!-- Voorbeeld van hoe de gegenereerde code er uit komt te zien -->
+            <!--<div class="rowcontainer">
+                <div class="productomschrijving">
+                    <div class="afbeelding">
+                        test
+                    </div>
+                </div>
+                <div class="prijs">
+                    [DB PRIJS]
+                </div>
+                <div class="aantal">
+                    [DB AANTAL]
+                </div>
+                <div class="totaal">
+                    [DB TOTAAL]
+                </div>
+                <div class="verwijder">
+                    <a href="NotImplemented.aspx">Verwijder</a>
                 </div>
             </div>
-            <div class="prijs">
-                [DB PRIJS]
-            </div>
-            <div class="aantal">
-                [DB AANTAL]
-            </div>
-            <div class="totaal">
-                [DB TOTAAL]
-            </div>
-            <div class="verwijder">
-                <a href="NotImplemented.aspx">Verwijder</a>
-            </div>
-        </div>
-        <br /><hr /><br />
-        <div class="rowcontainer">
-            <div class="productomschrijving">
-                <div class="afbeelding">
-                    test
+            <br /><hr /><br />
+            <div class="rowcontainer">
+                <div class="productomschrijving">
+                    <div class="afbeelding">
+                        test
+                    </div>
                 </div>
-            </div>
-            <div class="prijs">
-                [DB PRIJS]
-            </div>
-            <div class="aantal">
-                [DB AANTAL]
-            </div>
-            <div class="totaal">
-                [DB TOTAAL]
-            </div>
-            <div class="verwijder">
-                <a href="NotImplemented.aspx">Verwijder</a>
-            </div>
+                <div class="prijs">
+                    [DB PRIJS]
+                </div>
+                <div class="aantal">
+                    [DB AANTAL]
+                </div>
+                <div class="totaal">
+                    [DB TOTAAL]
+                </div>
+                <div class="verwijder">
+                    <a href="NotImplemented.aspx">Verwijder</a>
+                </div>
+            </div>-->
         </div>
     </div>
     <br /><br /><br />
