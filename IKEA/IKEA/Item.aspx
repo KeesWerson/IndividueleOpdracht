@@ -4,8 +4,11 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div id="itemcontainer">
-        <div id="picture">
-            test
+        <div runat="server" id="contentItemAfbeelding">
+            <!-- Voorbeeld van hoe de gegenereerde code er uit komt te zien -->
+            <!--<div id="picture">
+                test
+            </div>-->
         </div>
         <div id="info">
             <asp:Label ID="lblNaam" runat="server" Text="[NAAM]"></asp:Label><br />

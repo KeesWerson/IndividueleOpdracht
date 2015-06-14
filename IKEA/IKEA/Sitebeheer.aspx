@@ -3,5 +3,5 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <asp:TextBox ID="tbPath" runat="server"></asp:TextBox>
-    <asp:Button ID="btnBrowse" runat="server" Text="Browse..."/><br />
+    <asp:Button ID="btnBrowse" runat="server" Text="Browse..."/><br /><br />
 </asp:Content>
