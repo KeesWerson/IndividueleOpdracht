@@ -13,7 +13,9 @@ namespace IKEA
 {
     public partial class Item : System.Web.UI.Page
     {
+        //Fields
         int aantal;
+        int nieuwID;
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -77,10 +79,11 @@ namespace IKEA
             {
                 aantal = Convert.ToInt32(tbAantal.Text);
                 //Het maximum ID opvragen zodat ik een unieke primary key krijg
-                /*Klassen.SelectMaxID selectedMax = new Klassen.SelectMaxID();
+                Klassen.SelectMaxID selectedMax = new Klassen.SelectMaxID();
                 nieuwID = selectedMax.getMaXID("SELECT MAX(bestelnummer) FROM bestelopdracht");
+                lblArtNr.Text = nieuwID.ToString();
                 //TODO: Account opvragen.
-                Klassen.BestelOpdracht b = new Klassen.BestelOpdracht(nieuwID, 1, itemid, DateTime.Now, 1, aantal);
+                /*Klassen.BestelOpdracht b = new Klassen.BestelOpdracht(nieuwID, 1, itemid, DateTime.Now, 1, aantal);
                 b.AddBestelling(b);
                 Response.Redirect("Winkelwagen.aspx");*/
             }

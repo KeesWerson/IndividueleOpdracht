@@ -127,6 +127,7 @@
       <DependentUpon>Item.aspx</DependentUpon>
     </Compile>
     <Compile Include="Klassen\FolderBrowser.cs" />
+    <Compile Include="Klassen\SelectMaxID.cs" />
     <Compile Include="NotImplemented.aspx.cs">
       <DependentUpon>NotImplemented.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
