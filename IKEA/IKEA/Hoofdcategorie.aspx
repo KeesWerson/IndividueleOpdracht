@@ -38,9 +38,9 @@
                 </ul>
             </div>-->
         </div>
-        <!--<div runat="server" id="contentCategorieAfbeelding">-->
+        <div runat="server" id="contentCategorieAfbeelding">
             <!-- Voorbeeld van hoe de gegenereerde code er uit komt te zien -->
-            <div id="sublijstafb">
+            <!--<div id="sublijstafb">
                 <div class="largeimg">
                     <img src ="Images/ikealogo.gif" width="780px" height="400px"/>
                 </div>
@@ -56,7 +56,7 @@
                         <img src ="Images/ikealogo.gif" width="260px" height="260px"/>
                     </div>
                 </div>
-            </div>
-        <!--</div>-->
+            </div>-->
+        </div>
     </div>
 </asp:Content>

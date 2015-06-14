@@ -53,7 +53,7 @@ namespace IKEA
                         SubCategorieClass scat = new SubCategorieClass(reader.GetInt32(0), reader.GetInt32(1), reader.GetString(2));
                         Subcategorieen.Add(scat);
                     }
-                    //Vervolgens ga ik voor iedere categorie de subcategorieen ophalen
+                    //Vervolgens ga ik voor iedere categorie de sub-subcategorieen ophalen
                     //Ook voeg ik deze toe aan de div
                     foreach (SubCategorieClass categorie in Subcategorieen)
                     {
@@ -75,23 +75,23 @@ namespace IKEA
                     /// 
                     contentCategorieAfbeelding.InnerHtml = "<div id=" + "sublijstafb" + "><div class=" + "largeimg" + "><img src =";
                     //De grote afbeelding
-                    com.CommandText = "SELECT utl_raw.cast_to_varchar2(dbms_lob.substr(afbeelding)) FROM catafbeelding WHERE formaat = 'groot' AND categorieID = 2";
+                    com.CommandText = "SELECT utl_raw.cast_to_varchar2(dbms_lob.substr(afbeelding)) FROM catafbeelding WHERE formaat = 'groot' AND categorieID = 3";
                     reader = com.ExecuteReader();
                     reader.Read();
                     contentCategorieAfbeelding.InnerHtml += reader.GetString(0); 
                     reader.Close();
                     contentCategorieAfbeelding.InnerHtml += " width=780px height=400px/></div><br /><div id=mediumcontainer><div class=mediumimg><img src =";
                     //De middel afbeelding
-                    com.CommandText = "SELECT utl_raw.cast_to_varchar2(dbms_lob.substr(afbeelding)) FROM catafbeelding WHERE formaat = 'middel' AND categorieID = 2";
+                    com.CommandText = "SELECT utl_raw.cast_to_varchar2(dbms_lob.substr(afbeelding)) FROM catafbeelding WHERE formaat = 'middel' AND categorieID = 3";
                     reader = com.ExecuteReader();
                     reader.Read();
                     contentCategorieAfbeelding.InnerHtml += reader.GetString(0);
                     reader.Close();
                     contentCategorieAfbeelding.InnerHtml += " width=500px height=539px/></div>";
                     //De kleine afbeeldingen
-                    com.CommandText = "SELECT utl_raw.cast_to_varchar2(dbms_lob.substr(afbeelding)) FROM catafbeelding WHERE formaat = 'klein' AND categorieID = 2";
+                    com.CommandText = "SELECT utl_raw.cast_to_varchar2(dbms_lob.substr(afbeelding)) FROM catafbeelding WHERE formaat = 'klein' AND categorieID = 3";
                     reader = com.ExecuteReader();
-                    while (reader.Read())
+                    while (reader.Read() && teller < 3)
                     {
                         contentCategorieAfbeelding.InnerHtml += "<div class=cubeimg"+teller+"><img src =";
                         contentCategorieAfbeelding.InnerHtml += reader.GetString(0);
