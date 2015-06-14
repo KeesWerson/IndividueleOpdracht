@@ -6,3 +6,4 @@ C:\Users\Kees\Documents\GitHub\IndividueleOpdracht\ImageAdder\ImageAdder\obj\x64
 C:\Users\Kees\Documents\GitHub\IndividueleOpdracht\ImageAdder\ImageAdder\obj\x64\Debug\ImageAdder.csproj.GenerateResource.Cache
 C:\Users\Kees\Documents\GitHub\IndividueleOpdracht\ImageAdder\ImageAdder\obj\x64\Debug\ImageAdder.exe
 C:\Users\Kees\Documents\GitHub\IndividueleOpdracht\ImageAdder\ImageAdder\obj\x64\Debug\ImageAdder.pdb
+C:\Users\Kees\Documents\GitHub\IndividueleOpdracht\ImageAdder\ImageAdder\obj\x64\Debug\ImageAdder.csprojResolveAssemblyReference.cache

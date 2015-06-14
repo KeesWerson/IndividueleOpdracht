@@ -103,16 +103,8 @@ namespace ImageAdder
                 cmd.CommandText = "INSERT INTO catafbeelding VALUES ("+tbAfbeeldingID.Text+","+tbCategorieID.Text+", utl_raw.cast_to_raw('" + filePath + "'),'"+tbFormaat.Text+"')";
                 cmd.ExecuteNonQuery();
                 otn.Commit();
-                //**
-                //Initialize OracleCommand object for insert.
-                cmd = new OracleCommand(cmd.CommandText, conn);
-                //Open connection and execute insert query.
-                //conn.Open();
-                cmd.ExecuteNonQuery();
                 MessageBox.Show("Image added to blob field");
                 cmd.Dispose();
-                //conn.Close();
-                //this.Close();
             }
             catch (Exception ex)
             {
