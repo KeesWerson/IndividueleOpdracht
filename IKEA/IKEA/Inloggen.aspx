@@ -25,7 +25,7 @@
                  je ontwerpen uit de 3D Keukenplanner en andere online planners bewaren
                  en vanaf elke pc, ook in de winkel, openen. En daarnaast kan je heel
                  gemakkelijk lid worden van IKEA FAMILY.</h5><br />
-            <asp:Button ID="Registreer" runat="server" Text="Profiel aanmaken" />
+            <asp:Button ID="Registreer" runat="server" Text="Profiel aanmaken" OnClick="Registreer_Click"/>
         </div>
     </div>
     <br /><br /><br />
