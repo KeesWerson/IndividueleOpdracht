@@ -8,6 +8,8 @@ using System.Web.UI.WebControls;
 using System.Data.Common;
 using System.Configuration;
 using Oracle.ManagedDataAccess.Client;
+//Voor de INSERT statements
+using System.Data;
 
 namespace IKEA
 {
@@ -86,6 +88,35 @@ namespace IKEA
                 /*Klassen.BestelOpdracht b = new Klassen.BestelOpdracht(nieuwID, 1, itemid, DateTime.Now, 1, aantal);
                 b.AddBestelling(b);
                 Response.Redirect("Winkelwagen.aspx");*/
+
+                using (DbConnection con = OracleClientFactory.Instance.CreateConnection())
+                {
+                    if (con == null)
+                    {
+                        //return "Error! No Connection";
+                    }
+                    con.ConnectionString = ConfigurationManager.ConnectionStrings["myConnectionString"].ConnectionString;
+                    con.Open();
+                    DbCommand com = OracleClientFactory.Instance.CreateCommand();
+                    if (com == null)
+                    {
+                        //return "Error! No Command";
+                    }
+                    com.Connection = con;
+                    OracleCommand cmd = (OracleCommand)con.CreateCommand();
+                    try
+                    {
+                        OracleTransaction otn = (OracleTransaction)con.BeginTransaction(IsolationLevel.ReadCommitted);
+                        string datum = DateTime.Now.ToString("dd-MMM-yyyy");
+                        cmd.CommandText = "INSERT INTO bestelopdracht VALUES (9,1,2,'"+ datum +"',1,20)";
+                        cmd.ExecuteNonQuery();
+                        otn.Commit();
+                    }
+                    catch (NullReferenceException)
+                    {
+
+                    }
+                }
             }
             catch { lblAantalError.Visible = true; }
         }
