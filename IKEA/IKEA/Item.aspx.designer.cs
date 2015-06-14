@@ -76,15 +76,6 @@ namespace IKEA {
         protected global::System.Web.UI.WebControls.TextBox tbAantal;
         
         /// <summary>
-        /// lblAantalError control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblAantalError;
-        
-        /// <summary>
         /// btnWinkelwagen control.
         /// </summary>
         /// <remarks>

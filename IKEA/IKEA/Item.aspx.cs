@@ -13,11 +13,6 @@ namespace IKEA
 {
     public partial class Item : System.Web.UI.Page
     {
-        //Fields
-        int itemid = 0;
-        int aantal;
-        int nieuwID;
-
         protected void Page_Load(object sender, EventArgs e)
         {
             using (DbConnection con = OracleClientFactory.Instance.CreateConnection())
@@ -34,7 +29,7 @@ namespace IKEA
                     //return "Error! No Command";
                 }
                 com.Connection = con;
-                com.CommandText = "SELECT naam, soort, prijs, itemID, productomschrijving, afbeelding, itemID FROM item WHERE itemID = 1";
+                com.CommandText = "SELECT naam, soort, prijs, itemID, productomschrijving, afbeelding FROM item WHERE itemID = 1";
                 DbDataReader reader = com.ExecuteReader();
                 try
                 {
@@ -50,8 +45,6 @@ namespace IKEA
                     lblKosten.Text = "€" + reader.GetDouble(2); 
                     lblArtNr.Text = "Artikel Nr: " + reader.GetInt32(3); 
                     lblOmschrijving.Text = reader.GetString(4) + "ja ik weet dat dit een lange zin is maar ik wil heel erg graag een of adere moeilijke test uitvoeren waardoor blijkt dat mijn div`s goed mee gaan schalen. Als dit niet het geval is zal ik mijn dynamiteit van de site aan moeten passen.";
-                    //Het id voor als het product naar de verlanglijst/winkelwagen gaat
-                    itemid = reader.GetInt32(6); 
                     reader.Close();
                     //Het invullen van de juiste afbeelding
                     contentItemAfbeelding.InnerHtml = "<div id=picture><img src =";
@@ -73,40 +66,6 @@ namespace IKEA
 
                 }
             }
-        }
-        
-        protected void btnWinkelwagen_Click(object sender, EventArgs e)
-        {
-            lblAantalError.Visible = false;
-            try 
-            { 
-                /*aantal = Convert.ToInt32(tbAantal.Text);
-                //Het maximum ID opvragen zodat ik een unieke primary key krijg
-                Klassen.SelectMaxID selectedMax = new Klassen.SelectMaxID();
-                nieuwID = selectedMax.getMaXID("SELECT MAX(bestelnummer) FROM bestelopdracht");
-                //TODO: Account opvragen.
-                Klassen.BestelOpdracht b = new Klassen.BestelOpdracht(nieuwID, 1, itemid, DateTime.Now, 1, aantal);
-                b.AddBestelling(b);
-                Response.Redirect("Winkelwagen.aspx");*/
-            }
-            catch { lblAantalError.Visible = true; }
-        }
-
-        protected void btnVerlanglijst_Click(object sender, EventArgs e)
-        {
-            lblAantalError.Visible = false;
-            try
-            {
-                /*aantal = Convert.ToInt32(tbAantal.Text);
-                //Het maximum ID opvragen zodat ik een unieke primary key krijg
-                Klassen.SelectMaxID selectedMax = new Klassen.SelectMaxID();
-                nieuwID = selectedMax.getMaXID("SELECT MAX(bestelnummer) FROM bestelopdracht");
-                //TODO: Account opvragen.
-                Klassen.BestelOpdracht b = new Klassen.BestelOpdracht(nieuwID, 1, itemid, DateTime.Now, 0, aantal);
-                b.AddBestelling(b);
-                Response.Redirect("Verlanglijst.aspx");*/
-            }
-            catch { lblAantalError.Visible = true; }
         }
     }
 }

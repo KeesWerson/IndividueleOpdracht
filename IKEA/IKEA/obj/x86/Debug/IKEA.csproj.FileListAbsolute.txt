@@ -1,7 +1,0 @@
-C:\Users\Kees\Documents\GitHub\IndividueleOpdracht\IKEA\IKEA\bin\IKEA.dll.config
-C:\Users\Kees\Documents\GitHub\IndividueleOpdracht\IKEA\IKEA\bin\IKEA.dll
-C:\Users\Kees\Documents\GitHub\IndividueleOpdracht\IKEA\IKEA\bin\IKEA.pdb
-C:\Users\Kees\Documents\GitHub\IndividueleOpdracht\IKEA\IKEA\bin\Oracle.ManagedDataAccess.dll
-C:\Users\Kees\Documents\GitHub\IndividueleOpdracht\IKEA\IKEA\obj\x86\Debug\IKEA.csprojResolveAssemblyReference.cache
-C:\Users\Kees\Documents\GitHub\IndividueleOpdracht\IKEA\IKEA\obj\x86\Debug\IKEA.dll
-C:\Users\Kees\Documents\GitHub\IndividueleOpdracht\IKEA\IKEA\obj\x86\Debug\IKEA.pdb
