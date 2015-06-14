@@ -14,8 +14,9 @@
             <asp:TextBox ID="tbGebruikersnaam" runat="server"></asp:TextBox><br />
             <asp:Label ID="lblWachtwoord" runat="server" Text="Wachtwoord: "></asp:Label>   
             <asp:TextBox ID="tbWachtwoord" runat="server"></asp:TextBox><br />
+            <asp:Label ID="lblInlogError" runat="server" Text="Ongeldige gebruikersnaam of wachtwoord." ForeColor="Red" Visible="False"></asp:Label>
             <br /><br /><br /><hr /><br />
-            <asp:Button ID="Login" runat="server" Text="Inloggen" />
+            <asp:Button ID="Login" runat="server" Text="Inloggen" OnClick="Login_Click" />
         </div>
         <div class="registreersectie">
             <h3>Waarom een profiel aanmaken?</h3>

@@ -43,8 +43,8 @@
             <section id="header" class = "header">
                 <nav id="nav">
                     <ul class="nav navbar-nav">
-                        <li><a href="Registreren.aspx">Aanbiedingen</a></li>
-                        <li><a href="Hoofdpagina.aspx">Nieuw</a></li>
+                        <li><a href="Registreren.aspx">Registreren</a></li>
+                        <li><a href="Hoofdpagina.aspx">Home</a></li>
                         <li><a href="Hoofdcategorie.aspx">Tuin en balkon</a></li>
                         <li><a href="Hoofdcategorie.aspx">Woonkamer</a></li>
                         <li><a href="Hoofdcategorie.aspx">Slaapkamer</a></li>
