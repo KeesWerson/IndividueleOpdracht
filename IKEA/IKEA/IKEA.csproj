@@ -70,6 +70,12 @@
     <Content Include="Hoofdcategorie.aspx" />
     <Content Include="Hoofdpagina.aspx" />
     <Content Include="CSS\Hoofdpagina.css" />
+    <Content Include="Images\hoofdpagina_groot.jpg" />
+    <Content Include="Images\hoofdpagina_klein1.jpg" />
+    <Content Include="Images\hoofdpagina_klein2.jpg" />
+    <Content Include="Images\hoofdpagina_klein3.jpg" />
+    <Content Include="Images\hoofdpagina_middel1.jpg" />
+    <Content Include="Images\hoofdpagina_middel2.jpg" />
     <Content Include="Images\ikealogo.gif" />
     <Content Include="Images\Winkelwagen.jpg" />
     <Content Include="CSS\Style.css" />
