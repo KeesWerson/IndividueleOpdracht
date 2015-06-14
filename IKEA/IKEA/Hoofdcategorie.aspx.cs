@@ -21,6 +21,7 @@ namespace IKEA
         List<SubCategorieClass> Subcategorieen = new List<SubCategorieClass>();
         //fields
         int teller = 1;
+        string sessionString = "";
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -63,7 +64,7 @@ namespace IKEA
                         while (reader.Read())
                         {
                             //Iedere sub-subcategorie toevoegen aan de subcategorie
-                            contentCategorieLink.InnerHtml += "<li><a class=catlink href=Subcategorie.aspx>" + reader.GetString(0) + "</a></li>";
+                            contentCategorieLink.InnerHtml += "<li><a class=catlink href=Subcategorie.aspx>" + reader.GetString(0) + "</a></li></li>";
                         }
                         contentCategorieLink.InnerHtml += "</ul></li>";
                     }
@@ -105,6 +106,11 @@ namespace IKEA
 
                 }
             }
+        }
+
+        protected void SubSubCategorie_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Registreren.aspx");
         }
     }
 }

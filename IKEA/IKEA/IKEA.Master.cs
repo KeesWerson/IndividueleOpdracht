@@ -9,9 +9,44 @@ namespace IKEA
 {
     public partial class IKEA : System.Web.UI.MasterPage
     {
+        //Als er een gebruiker is ingelogd zal de gebruikersnaam
+        //Boven aan de pagine worden gedisplayd.
         protected void Page_Load(object sender, EventArgs e)
         {
+            string gebruikerid;
+            try { gebruikerid = (String)Session["accountid"].ToString(); }
+            catch { gebruikerid = ""; }
+            string gebruikersnaam = (String)Session["gebruikersnaam"];
+            if (gebruikersnaam != null)
+            {
+                lblUser.Text = "User: " + gebruikersnaam +"   " + gebruikerid;
+            }
+            else
+            {
+                lblUser.Text = "";
+            }
+        }
 
+        //Het eindigen van de inlog sessie.
+        protected void Uitloggen_Click(object sender, EventArgs e)
+        {
+            string gebruikersnaam = (String)Session["gebruikersnaam"];
+            if (gebruikersnaam != null)
+            {
+                string script = "alert(\"U bent succesvol uitgelogd.\");";
+                ScriptManager.RegisterStartupScript(this, GetType(),
+                                      "ServerControlScript", script, true);
+                Session["gebruikersnaam"] = null;
+                Session["accountid"] = null;
+                lblUser.Text = "";
+            }
+            else
+            {
+                string script = "alert(\"U bent niet ingelogd.\");";
+                ScriptManager.RegisterStartupScript(this, GetType(),
+                                      "ServerControlScript", script, true);
+                lblUser.Text = "";
+            }            
         }
     }
 }

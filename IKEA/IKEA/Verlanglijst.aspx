@@ -24,6 +24,7 @@
             </div>
         </div>
         <br /><hr /><br />
+        <b><asp:Label ID="lblGebruikerError" runat="server" Text="U heeft een account nodig om gebruik te maken van de verlanglijst." Visible="False" CssClass="errorStyle"></asp:Label></b>
         <div runat="server" id ="contentVerlanglijst">
             <!-- Voorbeeld van hoe de gegenereerde code er uit komt te zien -->
             <!--<div class="rowcontainer">

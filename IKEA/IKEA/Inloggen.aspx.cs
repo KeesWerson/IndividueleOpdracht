@@ -34,7 +34,7 @@ namespace IKEA
                     //return "Error! No Command";
                 }
                 com.Connection = con;
-                com.CommandText = "SELECT gebruikersnaam, wachtwoord FROM ikeaaccount";
+                com.CommandText = "SELECT gebruikersnaam, wachtwoord, accountID FROM ikeaaccount";
                 DbDataReader reader = com.ExecuteReader();
                 try
                 {
@@ -48,8 +48,9 @@ namespace IKEA
                     {
                         if (tbGebruikersnaam.Text == reader.GetString(0) && tbWachtwoord.Text == reader.GetString(1))
                         {
-                            tbGebruikersnaam.Text = "INGELOGD";
-                            tbWachtwoord.Text = ":)";
+                            Session["gebruikersnaam"] = tbGebruikersnaam.Text;
+                            Session["accountid"] = reader.GetInt32(2);
+                            Response.Redirect("Hoofdpagina.aspx");
                         }
                     }
                     if (tbGebruikersnaam.Text != "INGELOGD")

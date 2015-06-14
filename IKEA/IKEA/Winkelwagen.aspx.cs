@@ -31,8 +31,14 @@ namespace IKEA
                 {
                     //return "Error! No Command";
                 }
+                //Het ophalen van het id van de ingelogde gebruiker.
+                //Is er niemand ingelog, dan wordt gebruikerid -1.
+                string gebruikerid;
+                try { gebruikerid = (String)Session["accountid"].ToString(); }
+                catch { gebruikerid = "-1"; }
+                lblGebruikerError.Visible = false;
                 com.Connection = con;
-                com.CommandText = "SELECT i.afbeelding, i.prijs, b.aantal, i.productomschrijving FROM item i, bestelopdracht b WHERE i.itemID = b.itemID AND wagenoflijst = 1 AND b.accountID = 1";
+                com.CommandText = "SELECT i.afbeelding, i.prijs, b.aantal, i.productomschrijving FROM item i, bestelopdracht b WHERE i.itemID = b.itemID AND wagenoflijst = 1 AND b.accountID = " + gebruikerid;
                 DbDataReader reader = com.ExecuteReader();
                 try
                 {
@@ -62,6 +68,10 @@ namespace IKEA
                         contentWinkelwagen.InnerHtml += "</div><div class=totaal>";
                         contentWinkelwagen.InnerHtml += (reader.GetDouble(1) * reader.GetInt32(2)); //Totale prijs
                         contentWinkelwagen.InnerHtml += "</div><div class=verwijder><a href=NotImplemented.aspx>Verwijder</a></div></div>";
+                    }
+                    if (gebruikerid == "-1")
+                    {
+                        lblGebruikerError.Visible = true;
                     }
                 }
                 catch (NullReferenceException)

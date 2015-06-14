@@ -12,27 +12,27 @@
                 <ul class="catlist">
                     <li><b>DB_HOOFCAT</b>
                         <ul class="catlist">
-                            <li><a class="catlink" href="Subcategorie.aspx">DB_subcat</a></li>
-                            <li><a class="catlink" href="Subcategorie.aspx">DB_subcat</a></li>
-                            <li><a class="catlink" href="Subcategorie.aspx">DB_subcat</a></li>
+                            <li><a class="catlink" href="#" runat="server" onServerClick="SubSubCategorie_Click">DB_subcat</a></li>
+                            <li><a class="catlink" href="#" runat="server" onServerClick="SubSubCategorie_Click">DB_subcat</a></li>
+                            <li><a class="catlink" href="#" runat="server" onServerClick="SubSubCategorie_Click">DB_subcat</a></li>
                         </ul></li>
                     <li><b>DB_HOOFCAT</b>
                         <ul class="catlist">
-                            <li><a class="catlink" href="Subcategorie.aspx">DB_subcat</a></li>
-                            <li><a class="catlink" href="Subcategorie.aspx">DB_subcat</a></li>
-                            <li><a class="catlink" href="Subcategorie.aspx">DB_subcat</a></li>
+                            <li><a class="catlink" href="#" runat="server" onServerClick="SubSubCategorie_Click">DB_subcat</a></li>
+                            <li><a class="catlink" href="#" runat="server" onServerClick="SubSubCategorie_Click">DB_subcat</a></li>
+                            <li><a class="catlink" href="#" runat="server" onServerClick="SubSubCategorie_Click">DB_subcat</a></li>
                         </ul></li>
                     <li><b>DB_HOOFCAT</b>
                         <ul class="catlist">
-                            <li><a class="catlink" href="Subcategorie.aspx">DB_subcat</a></li>
-                            <li><a class="catlink" href="Subcategorie.aspx">DB_subcat</a></li>
-                            <li><a class="catlink" href="Subcategorie.aspx">DB_subcat</a></li>
+                            <li><a class="catlink" href="#" runat="server" onServerClick="SubSubCategorie_Click">DB_subcat</a></li>
+                            <li><a class="catlink" href="#" runat="server" onServerClick="SubSubCategorie_Click">DB_subcat</a></li>
+                            <li><a class="catlink" href="#" runat="server" onServerClick="SubSubCategorie_Click">DB_subcat</a></li>
                         </ul></li>
                     <li><b>DB_HOOFCAT</b>
                         <ul class="catlist">
-                            <li><a class="catlink" href="Subcategorie.aspx">DB_subcat</a></li>
-                            <li><a class="catlink" href="Subcategorie.aspx">DB_subcat</a></li>
-                            <li><a class="catlink" href="Subcategorie.aspx">DB_subcat</a></li>
+                            <li><a class="catlink" href="#" runat="server" onServerClick="SubSubCategorie_Click">DB_subcat</a></li>
+                            <li><a class="catlink" href="#" runat="server" onServerClick="SubSubCategorie_Click">DB_subcat</a></li>
+                            <li><a class="catlink" href="#" runat="server" onServerClick="SubSubCategorie_Click">DB_subcat</a></li>
                         </ul>
                     </li>
                 </ul>

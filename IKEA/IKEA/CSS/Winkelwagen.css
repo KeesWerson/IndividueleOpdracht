@@ -72,3 +72,7 @@ a:hover {
     width: 800px;
     position: fixed;
 }
+
+.errorStyle {
+    font-family: Calibri;
+}

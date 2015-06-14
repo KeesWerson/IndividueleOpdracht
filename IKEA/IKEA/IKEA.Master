@@ -23,12 +23,14 @@
             <div id="zoekbalk">
                 <form>
                     <input type="text" name="tbzoeken"/>
-                    <input type="submit" name="btnzoeken" value="Zoek"/>
+                    <input type="submit" name="btnzoeken" value="Zoek"/><br /><br /><br />
+                    <asp:Label ID="lblUser" runat="server" Text=""></asp:Label>
                 </form>
             </div>
             <div id="opties">
-                <div id="optieInhoud">
+                <div id="optieInhoud">     
                     <a class="nostyle" href="Inloggen.aspx">Inloggen</a><br />
+                    <a class="nostyle" href="#" runat="server" onServerClick="Uitloggen_Click">Uitloggen</a><br />
                     <a class="nostyle" href="Verlanglijst.aspx">Mijn verlanglijstje</a><br />
                     <a class="nostyle" href="Winkelwagen.aspx">Mijn winkelwagen</a>
                 </div>

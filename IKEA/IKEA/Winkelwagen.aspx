@@ -24,6 +24,7 @@
             </div>
         </div>
         <br /><hr /><br />
+        <b><asp:Label ID="lblGebruikerError" runat="server" Text="U heeft een account nodig om gebruik te maken van de winkelwagen." Visible="False" CssClass="errorStyle"></asp:Label></b>
         <div runat="server" id="contentWinkelwagen">
             <!-- Voorbeeld van hoe de gegenereerde code er uit komt te zien -->
             <!--<div class="rowcontainer">
