@@ -8,8 +8,6 @@ using System.Web.UI.WebControls;
 using System.Data.Common;
 using System.Configuration;
 using Oracle.ManagedDataAccess.Client;
-//Voor de INSERT statements
-using System.Data;
 
 namespace IKEA
 {
@@ -18,9 +16,14 @@ namespace IKEA
         //Fields
         int aantal;
         int nieuwID;
+        int itemid;
+        Klassen.InsertClass insert;
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            //Niewe instantie van de insertklas
+            insert = new Klassen.InsertClass();
+
             using (DbConnection con = OracleClientFactory.Instance.CreateConnection())
             {
                 if (con == null)
@@ -49,7 +52,8 @@ namespace IKEA
                     lblNaam.Text = reader.GetString(0); 
                     lblSoortOmschr.Text = reader.GetString(1); 
                     lblKosten.Text = "€" + reader.GetDouble(2); 
-                    lblArtNr.Text = "Artikel Nr: " + reader.GetInt32(3); 
+                    lblArtNr.Text = "Artikel Nr: " + reader.GetInt32(3);
+                    itemid = reader.GetInt32(3);
                     lblOmschrijving.Text = reader.GetString(4) + "ja ik weet dat dit een lange zin is maar ik wil heel erg graag een of adere moeilijke test uitvoeren waardoor blijkt dat mijn div`s goed mee gaan schalen. Als dit niet het geval is zal ik mijn dynamiteit van de site aan moeten passen.";
                     reader.Close();
                     //Het invullen van de juiste afbeelding
@@ -83,40 +87,10 @@ namespace IKEA
                 //Het maximum ID opvragen zodat ik een unieke primary key krijg
                 Klassen.SelectMaxID selectedMax = new Klassen.SelectMaxID();
                 nieuwID = selectedMax.getMaXID("SELECT MAX(bestelnummer) FROM bestelopdracht");
-                lblArtNr.Text = nieuwID.ToString();
-                //TODO: Account opvragen.
-                /*Klassen.BestelOpdracht b = new Klassen.BestelOpdracht(nieuwID, 1, itemid, DateTime.Now, 1, aantal);
-                b.AddBestelling(b);
-                Response.Redirect("Winkelwagen.aspx");*/
-
-                using (DbConnection con = OracleClientFactory.Instance.CreateConnection())
-                {
-                    if (con == null)
-                    {
-                        //return "Error! No Connection";
-                    }
-                    con.ConnectionString = ConfigurationManager.ConnectionStrings["myConnectionString"].ConnectionString;
-                    con.Open();
-                    DbCommand com = OracleClientFactory.Instance.CreateCommand();
-                    if (com == null)
-                    {
-                        //return "Error! No Command";
-                    }
-                    com.Connection = con;
-                    OracleCommand cmd = (OracleCommand)con.CreateCommand();
-                    try
-                    {
-                        OracleTransaction otn = (OracleTransaction)con.BeginTransaction(IsolationLevel.ReadCommitted);
-                        string datum = DateTime.Now.ToString("dd-MMM-yyyy");
-                        cmd.CommandText = "INSERT INTO bestelopdracht VALUES (9,1,2,'"+ datum +"',1,20)";
-                        cmd.ExecuteNonQuery();
-                        otn.Commit();
-                    }
-                    catch (NullReferenceException)
-                    {
-
-                    }
-                }
+                //Het toevoegen van de order
+                string datum = DateTime.Now.ToString("dd-MMM-yyyy");
+                insert.InsertData("INSERT INTO bestelopdracht VALUES ("+nieuwID+",1,"+itemid+",'"+datum+"',1,"+aantal+")");        
+                Response.Redirect("Winkelwagen.aspx");
             }
             catch { lblAantalError.Visible = true; }
         }
