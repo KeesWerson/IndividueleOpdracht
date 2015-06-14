@@ -13,5 +13,10 @@ namespace IKEA
         {
 
         }
+
+        protected void Registreer_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Registreren.aspx");
+        }
     }
 }
