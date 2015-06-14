@@ -13,9 +13,13 @@ namespace IKEA
 {
     public partial class Registreren : System.Web.UI.Page
     {
+        //Fields
+        int nieuwID;
+        Klassen.InsertClass insert;
+
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            insert = new Klassen.InsertClass();
         }
 
         protected void btnTerug_Click(object sender, EventArgs e)
@@ -92,6 +96,15 @@ namespace IKEA
                 {
 
                 }
+            }
+            //Als er nu dus geen Error-velden zichtbaar zijn wil dat zeggen
+            //Dat de gebruikergegevens kloppen. Daarna wordt er een INSERT statement
+            //aangeroepen die de nieuwe gebruiker toevoegt aan de database.
+            {
+                //Het maximum ID opvragen zodat ik een unieke primary key krijg
+                Klassen.SelectMaxID selectedMax = new Klassen.SelectMaxID();
+                nieuwID = selectedMax.getMaXID("SELECT MAX(accountID) FROM ikeaaccount");
+                //Het toevoegen van het account aan de database
             }
         }
     }
