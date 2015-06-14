@@ -18,9 +18,10 @@
 
             <asp:Label ID="lblOmschrijving" runat="server" Text="[OMSCHRIJVING]"></asp:Label><br /><br />
 
-            <asp:TextBox ID="tbAantal" runat="server"></asp:TextBox><br /><br />
-            <asp:Button ID="btnWinkelwagen" runat="server" Text="In winkelwagen" /><br />
-            <asp:Button ID="btnVerlanglijst" runat="server" Text="Verlanglijstje" />
+            <asp:TextBox ID="tbAantal" runat="server" Width="39px" MaxLength="3"></asp:TextBox>
+            <asp:Label ID="lblAantalError" runat="server" Text="Vul het aantal gewenste items in." ForeColor="Red" Visible="False"></asp:Label><br /><br />
+            <asp:Button ID="btnWinkelwagen" runat="server" Text="In winkelwagen" OnClick="btnWinkelwagen_Click" /><br />
+            <asp:Button ID="btnVerlanglijst" runat="server" Text="Verlanglijstje" OnClick="btnVerlanglijst_Click" />
             <hr />
         </div>
     </div>

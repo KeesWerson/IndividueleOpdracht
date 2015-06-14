@@ -13,6 +13,8 @@ namespace IKEA
 {
     public partial class Item : System.Web.UI.Page
     {
+        int aantal;
+
         protected void Page_Load(object sender, EventArgs e)
         {
             using (DbConnection con = OracleClientFactory.Instance.CreateConnection())
@@ -66,6 +68,40 @@ namespace IKEA
 
                 }
             }
+        }
+
+        protected void btnWinkelwagen_Click(object sender, EventArgs e)
+        {
+            lblAantalError.Visible = false;
+            try
+            {
+                aantal = Convert.ToInt32(tbAantal.Text);
+                //Het maximum ID opvragen zodat ik een unieke primary key krijg
+                /*Klassen.SelectMaxID selectedMax = new Klassen.SelectMaxID();
+                nieuwID = selectedMax.getMaXID("SELECT MAX(bestelnummer) FROM bestelopdracht");
+                //TODO: Account opvragen.
+                Klassen.BestelOpdracht b = new Klassen.BestelOpdracht(nieuwID, 1, itemid, DateTime.Now, 1, aantal);
+                b.AddBestelling(b);
+                Response.Redirect("Winkelwagen.aspx");*/
+            }
+            catch { lblAantalError.Visible = true; }
+        }
+
+        protected void btnVerlanglijst_Click(object sender, EventArgs e)
+        {
+            lblAantalError.Visible = false;
+            try
+            {
+                aantal = Convert.ToInt32(tbAantal.Text);
+                //Het maximum ID opvragen zodat ik een unieke primary key krijg
+                /*Klassen.SelectMaxID selectedMax = new Klassen.SelectMaxID();
+                nieuwID = selectedMax.getMaXID("SELECT MAX(bestelnummer) FROM bestelopdracht");
+                //TODO: Account opvragen.
+                Klassen.BestelOpdracht b = new Klassen.BestelOpdracht(nieuwID, 1, itemid, DateTime.Now, 0, aantal);
+                b.AddBestelling(b);
+                Response.Redirect("Verlanglijst.aspx");*/
+            }
+            catch { lblAantalError.Visible = true; }
         }
     }
 }
