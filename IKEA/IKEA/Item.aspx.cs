@@ -102,12 +102,12 @@ namespace IKEA
             {
                 aantal = Convert.ToInt32(tbAantal.Text);
                 //Het maximum ID opvragen zodat ik een unieke primary key krijg
-                /*Klassen.SelectMaxID selectedMax = new Klassen.SelectMaxID();
+                Klassen.SelectMaxID selectedMax = new Klassen.SelectMaxID();
                 nieuwID = selectedMax.getMaXID("SELECT MAX(bestelnummer) FROM bestelopdracht");
-                //TODO: Account opvragen.
-                Klassen.BestelOpdracht b = new Klassen.BestelOpdracht(nieuwID, 1, itemid, DateTime.Now, 0, aantal);
-                b.AddBestelling(b);
-                Response.Redirect("Verlanglijst.aspx");*/
+                //Het toevoegen van de order
+                string datum = DateTime.Now.ToString("dd-MMM-yyyy");
+                insert.InsertData("INSERT INTO bestelopdracht VALUES (" + nieuwID + ",1," + itemid + ",'" + datum + "',0," + aantal + ")");
+                Response.Redirect("Verlanglijst.aspx");
             }
             catch { lblAantalError.Visible = true; }
         }
