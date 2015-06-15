@@ -13,6 +13,15 @@ namespace IKEA {
     public partial class Registreren {
         
         /// <summary>
+        /// rfvGebruikersnaam control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvGebruikersnaam;
+        
+        /// <summary>
         /// lblGebruikersnaam control.
         /// </summary>
         /// <remarks>
@@ -40,6 +49,15 @@ namespace IKEA {
         protected global::System.Web.UI.WebControls.Label lblGebruikersnaamError;
         
         /// <summary>
+        /// RequiredFieldValidator3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator3;
+        
+        /// <summary>
         /// lblVoornaam control.
         /// </summary>
         /// <remarks>
@@ -58,13 +76,13 @@ namespace IKEA {
         protected global::System.Web.UI.WebControls.TextBox tbVoornaam;
         
         /// <summary>
-        /// lblVoornaamError control.
+        /// RequiredFieldValidator4 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblVoornaamError;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator4;
         
         /// <summary>
         /// lblAchternaam control.
@@ -85,15 +103,6 @@ namespace IKEA {
         protected global::System.Web.UI.WebControls.TextBox tbAchternaam;
         
         /// <summary>
-        /// lblAchternaamError control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblAchternaamError;
-        
-        /// <summary>
         /// lblTelnrMobiel control.
         /// </summary>
         /// <remarks>
@@ -110,6 +119,15 @@ namespace IKEA {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox tbTelnrMobiel;
+        
+        /// <summary>
+        /// RequiredFieldValidator1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
         
         /// <summary>
         /// lblEmail control.
@@ -130,13 +148,22 @@ namespace IKEA {
         protected global::System.Web.UI.WebControls.TextBox tbEmail;
         
         /// <summary>
-        /// lblEmailError control.
+        /// RegularExpressionValidator1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblEmailError;
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator1;
+        
+        /// <summary>
+        /// RequiredFieldValidator5 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator5;
         
         /// <summary>
         /// lblEmailOpnieuw control.
@@ -157,13 +184,22 @@ namespace IKEA {
         protected global::System.Web.UI.WebControls.TextBox tbEmailOpnieuw;
         
         /// <summary>
-        /// lblEmailOpnieuwError control.
+        /// CompareValidator1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblEmailOpnieuwError;
+        protected global::System.Web.UI.WebControls.CompareValidator CompareValidator1;
+        
+        /// <summary>
+        /// RequiredFieldValidator6 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator6;
         
         /// <summary>
         /// lblWachtwoord control.
@@ -184,13 +220,13 @@ namespace IKEA {
         protected global::System.Web.UI.WebControls.TextBox tbWachtwoord;
         
         /// <summary>
-        /// lblWachtwoordError control.
+        /// RequiredFieldValidator7 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblWachtwoordError;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator7;
         
         /// <summary>
         /// lblWachtwoordOpnieuw control.
@@ -211,13 +247,13 @@ namespace IKEA {
         protected global::System.Web.UI.WebControls.TextBox tbWachtwoordOpnieuw;
         
         /// <summary>
-        /// lblWachtwoordOpnieuwError control.
+        /// CompareValidator2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblWachtwoordOpnieuwError;
+        protected global::System.Web.UI.WebControls.CompareValidator CompareValidator2;
         
         /// <summary>
         /// cbVoorwaarden control.
@@ -238,13 +274,13 @@ namespace IKEA {
         protected global::System.Web.UI.WebControls.Label lblVoorwaarden;
         
         /// <summary>
-        /// lblVoorwaardenError control.
+        /// CheckBoxRequired control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblVoorwaardenError;
+        protected global::System.Web.UI.WebControls.CustomValidator CheckBoxRequired;
         
         /// <summary>
         /// btnTerug control.
@@ -263,5 +299,14 @@ namespace IKEA {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnOpslaan;
+        
+        /// <summary>
+        /// lblValidatie control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblValidatie;
     }
 }
