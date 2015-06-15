@@ -13,13 +13,10 @@ namespace IKEA
         //Boven aan de pagine worden gedisplayd.
         protected void Page_Load(object sender, EventArgs e)
         {
-            string gebruikerid;
-            try { gebruikerid = (String)Session["accountid"].ToString(); }
-            catch { gebruikerid = ""; }
             string gebruikersnaam = (String)Session["gebruikersnaam"];
             if (gebruikersnaam != null)
             {
-                lblUser.Text = "User: " + gebruikersnaam +"   " + gebruikerid;
+                lblUser.Text = "User: " + gebruikersnaam;
             }
             else
             {
@@ -39,6 +36,7 @@ namespace IKEA
                 Session["gebruikersnaam"] = null;
                 Session["accountid"] = null;
                 lblUser.Text = "";
+                Response.Redirect("Hoofdpagina.aspx");
             }
             else
             {

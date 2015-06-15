@@ -24,6 +24,16 @@ namespace IKEA
             //Niewe instantie van de insertklas
             insert = new Klassen.InsertClass();
 
+            //Als er geen gebruiker is ingelogd dan zijn de
+            //winkelwagen- en verlanglijst button weg gehaald.
+            string gebruikersnaam = (String)Session["gebruikersnaam"];
+            if (gebruikersnaam == null)
+            {
+                tbAantal.Visible = false;
+                btnWinkelwagen.Visible = false;
+                btnVerlanglijst.Visible = false;
+            }
+
             using (DbConnection con = OracleClientFactory.Instance.CreateConnection())
             {
                 if (con == null)
