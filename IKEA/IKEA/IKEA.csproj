@@ -66,6 +66,7 @@
     <Content Include="CSS\Item.css" />
     <Content Include="CSS\Registreren.css" />
     <Content Include="CSS\Subcategorie.css" />
+    <Content Include="CSS\Systeembeheer.css" />
     <Content Include="CSS\Winkelwagen.css" />
     <Content Include="Hoofdcategorie.aspx" />
     <Content Include="Hoofdpagina.aspx" />

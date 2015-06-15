@@ -1,0 +1,29 @@
+﻿h3 {
+    font-family: Calibri;
+    margin-left: 20px;
+}
+
+#SysteemContainer {
+    width: 1000px;
+    height: 300px;
+}
+
+.ItemAdder {
+    font-family: Calibri;
+    margin-left: 20px;
+    width: 470px;
+    height: 300px;
+    background-color: #f5f6f7;
+    position: absolute;
+    border: 1px solid #cccccc;
+}
+
+.CategorieAdder {
+    font-family: Calibri;
+    margin-left: 510px;
+    width: 470px;
+    height: 300px;
+    background-color: #f5f6f7;
+    position: absolute;
+    border: 1px solid #cccccc;
+}
