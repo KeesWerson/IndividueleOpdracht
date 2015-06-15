@@ -1,0 +1,8 @@
+C:\Users\Kees\Documents\GitHub\IndividueleOpdracht\IKEA\UnitTests\bin\Debug\UnitTests.dll
+C:\Users\Kees\Documents\GitHub\IndividueleOpdracht\IKEA\UnitTests\bin\Debug\UnitTests.pdb
+C:\Users\Kees\Documents\GitHub\IndividueleOpdracht\IKEA\UnitTests\bin\Debug\IKEA.dll
+C:\Users\Kees\Documents\GitHub\IndividueleOpdracht\IKEA\UnitTests\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\Kees\Documents\GitHub\IndividueleOpdracht\IKEA\UnitTests\bin\Debug\IKEA.pdb
+C:\Users\Kees\Documents\GitHub\IndividueleOpdracht\IKEA\UnitTests\obj\Debug\UnitTests.csprojResolveAssemblyReference.cache
+C:\Users\Kees\Documents\GitHub\IndividueleOpdracht\IKEA\UnitTests\obj\Debug\UnitTests.dll
+C:\Users\Kees\Documents\GitHub\IndividueleOpdracht\IKEA\UnitTests\obj\Debug\UnitTests.pdb
