@@ -99,7 +99,8 @@ namespace IKEA
                 nieuwID = selectedMax.getMaXID("SELECT MAX(bestelnummer) FROM bestelopdracht");
                 //Het toevoegen van de order
                 string datum = DateTime.Now.ToString("dd-MMM-yyyy");
-                insert.InsertData("INSERT INTO bestelopdracht VALUES ("+nieuwID+",1,"+itemid+",'"+datum+"',1,"+aantal+")");        
+                string accountid = (String)Session["accountid"];
+                insert.InsertData("INSERT INTO bestelopdracht VALUES (" + nieuwID + "," + accountid + "," + itemid + ",'" + datum + "',1," + aantal + ")");        
                 Response.Redirect("Winkelwagen.aspx");
             }
             catch { lblAantalError.Visible = true; }
@@ -116,7 +117,8 @@ namespace IKEA
                 nieuwID = selectedMax.getMaXID("SELECT MAX(bestelnummer) FROM bestelopdracht");
                 //Het toevoegen van de order
                 string datum = DateTime.Now.ToString("dd-MMM-yyyy");
-                insert.InsertData("INSERT INTO bestelopdracht VALUES (" + nieuwID + ",1," + itemid + ",'" + datum + "',0," + aantal + ")");
+                string accountid = (String)Session["accountid"];
+                insert.InsertData("INSERT INTO bestelopdracht VALUES (" + nieuwID + "," + accountid + "," + itemid + ",'" + datum + "',0," + aantal + ")");
                 Response.Redirect("Verlanglijst.aspx");
             }
             catch { lblAantalError.Visible = true; }
