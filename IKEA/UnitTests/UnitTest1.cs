@@ -10,7 +10,7 @@ namespace UnitTests
         [TestMethod]
         public void TestMethod1()
         {
-            Assert.AreEqual("kaas", "kaas");
+            Assert.AreEqual("test", "test");
         }
     }
 }

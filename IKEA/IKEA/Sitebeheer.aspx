@@ -6,6 +6,7 @@
     <div id="SysteemContainer">
         <div class="ItemAdder">
             <h3>Add Item</h3>
+            <!-- De textboxes voor het toevoegen van een ITEM -->
             <asp:Label ID="lblCategorie" runat="server" Text="CategorieID"></asp:Label>
             <asp:TextBox ID="tbCategorie" runat="server"></asp:TextBox><br />
             <asp:Label ID="lblSoort" runat="server" Text="Soort"></asp:Label>
@@ -20,6 +21,7 @@
         </div>
         <div class="CategorieAdder">
             <h3>Add Categorie</h3>
+            <!-- De textboxes voor het toevoegen van een CATEGORIE -->
             <asp:Label ID="lblSubCat" runat="server" Text="SubCategorieID"></asp:Label>
             <asp:TextBox ID="tbSubCat" runat="server"></asp:TextBox><br />
             <asp:Label ID="lblCatNaam" runat="server" Text="Categorienaam"></asp:Label>

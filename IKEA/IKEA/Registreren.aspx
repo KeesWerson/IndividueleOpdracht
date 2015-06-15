@@ -9,6 +9,9 @@
         <div id="registratie">
             <h3>Maak een profiel aan</h3>
             <hr /><br />
+            <!-- Het registeren beva een heleboel code. Dit is omdat er voor alle velden
+                gewerkt is met FieldValidators. Hiermee kijk ik of ingevulde waardes aan een aantal voor-
+                waarden voldoen. Zo niet, dan wordt er een error gedisplayd-->
             <asp:RequiredFieldValidator ID="rfvGebruikersnaam" runat="server" ControlToValidate="tbGebruikersnaam" Display="Dynamic" ErrorMessage="Gebruikersnaam is verplicht." ForeColor="Red" ValidationGroup="AllValidators">*</asp:RequiredFieldValidator>
             <asp:Label ID="lblGebruikersnaam" runat="server" Text="Gebruikersnaam "></asp:Label>
             <asp:TextBox ID="tbGebruikersnaam" runat="server" ValidationGroup="AllValidators" CausesValidation="false"></asp:TextBox>

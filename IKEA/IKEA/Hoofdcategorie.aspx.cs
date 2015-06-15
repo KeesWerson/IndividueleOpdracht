@@ -21,7 +21,6 @@ namespace IKEA
         List<SubCategorieClass> Subcategorieen = new List<SubCategorieClass>();
         //fields
         int teller = 1;
-        string sessionString = "";
 
         protected void Page_Load(object sender, EventArgs e)
         {

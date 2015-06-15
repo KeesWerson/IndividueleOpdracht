@@ -7,6 +7,8 @@
     <h3>Denk eraan om regelmatig je wachtwoord te wijzigen.</h3>
     <div id="inlogcontainer">
         <br />
+        <!-- De inlogsectie bestaat uit het gebruiker en het wachtwoord veld
+            Van de ingevulde gegevens wordt later gecontroleerd of ze geldig zijn -->
         <div class="inlogsectie">
             <h3>Inloggen</h3>
             <hr /><br /><br /><br />
@@ -18,6 +20,8 @@
             <br /><br /><br /><hr /><br />
             <asp:Button ID="Login" runat="server" Text="Inloggen" OnClick="Login_Click" />
         </div>
+        <!-- De registreersectie bestaat alleen uit een stuk tekst en een button
+            De button verwijst naar de registratie pagina -->
         <div class="registreersectie">
             <h3>Waarom een profiel aanmaken?</h3>
             <hr />
