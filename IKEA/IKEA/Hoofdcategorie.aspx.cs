@@ -38,7 +38,8 @@ namespace IKEA
                     //return "Error! No Command";
                 }
                 com.Connection = con;
-                com.CommandText = "SELECT categorieID, subcategorieID, categorienaam FROM categorie WHERE subcategorieID = 2";
+                string hoofdcategorieID = (String)Session["hoofdcategorie"];
+                com.CommandText = "SELECT categorieID, subcategorieID, categorienaam FROM categorie WHERE subcategorieID = " + hoofdcategorieID;
                 DbDataReader reader = com.ExecuteReader();
                 try
                 {
@@ -58,12 +59,13 @@ namespace IKEA
                     foreach (SubCategorieClass categorie in Subcategorieen)
                     {
                         contentCategorieLink.InnerHtml += "<li><b>" + categorie.CatName + "</b><ul class=catlist>";
-                        com.CommandText = "SELECT categorienaam FROM categorie WHERE subcategorieID = " + categorie.SubCatID;
+                        com.CommandText = "SELECT categorieID, categorienaam FROM categorie WHERE subcategorieID = " + categorie.SubCatID;
                         reader = com.ExecuteReader();
                         while (reader.Read())
                         {
                             //Iedere sub-subcategorie toevoegen aan de subcategorie
-                            contentCategorieLink.InnerHtml += "<li><a class=catlink href=Subcategorie.aspx>" + reader.GetString(0) + "</a></li></li>";
+                            //contentCategorieLink.InnerHtml += @"<li><a class=""catlink"" id=""" + reader.GetInt32(0) + @""" OnServerClick=""SubSubcategorie_Click"" runat=""server"">" + reader.GetString(1) + "</a></li></li>";
+                            contentCategorieLink.InnerHtml += "<li><a class=catlink href=Subcategorie.aspx>" + reader.GetString(1) + "</a></li></li>";
                         }
                         contentCategorieLink.InnerHtml += "</ul></li>";
                     }
@@ -107,9 +109,17 @@ namespace IKEA
             }
         }
 
-        protected void SubSubCategorie_Click(object sender, EventArgs e)
+        /// <summary>
+        /// SubSubcategorie_click wordt aangeroepen als er op een van de Sub-
+        /// categorieen in de menu-balk word geklikt. Het id van de <a> tag wordt
+        /// opgehaald en vervolgend opgeslagen in een sessie. Hiermee wordt bijgehouden
+        /// bij welke subcategorie je bevind.
+        /// </summary>
+        protected void SubSubcategorie_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Registreren.aspx");
+            string id = ((Control)sender).ID;
+            Session["hoofdcategorie"] = id.Substring(2);
+            Response.Redirect("Subcategorie.aspx");
         }
     }
 }

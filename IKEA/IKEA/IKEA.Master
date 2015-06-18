@@ -47,14 +47,14 @@
                     <ul class="nav navbar-nav">
                         <li><a href="Registreren.aspx">Registreren</a></li>
                         <li><a href="Hoofdpagina.aspx">Home</a></li>
-                        <li><a href="Hoofdcategorie.aspx">Tuin en balkon</a></li>
-                        <li><a href="Hoofdcategorie.aspx">Woonkamer</a></li>
-                        <li><a href="Hoofdcategorie.aspx">Slaapkamer</a></li>
-                        <li><a href="Hoofdcategorie.aspx">Keuken & apparatuur</a></li>
-                        <li><a href="Hoofdcategorie.aspx">badkamer</a></li>
-                        <li><a href="Hoofdcategorie.aspx">IKEA Kinderland</a></li>
-                        <li><a href="Hoofdcategorie.aspx">Werkplek</a></li>
-                        <li><a href="Hoofdcategorie.aspx">Textiel</a></li>
+                        <li><a id="id1" OnServerClick="Subcategorie_Click" runat="server">Tuin en balkon</a></li>
+                        <li><a id="id2" OnServerClick="Subcategorie_Click" runat="server">Woonkamer</a></li>
+                        <li><a id="id3" OnServerClick="Subcategorie_Click" runat="server">Slaapkamer</a></li>
+                        <li><a id="id4" OnServerClick="Subcategorie_Click" runat="server">Keuken & apparatuur</a></li>
+                        <li><a id="id5" OnServerClick="Subcategorie_Click" runat="server">badkamer</a></li>
+                        <li><a id="id6" OnServerClick="Subcategorie_Click" runat="server">IKEA Kinderland</a></li>
+                        <li><a id="id7" OnServerClick="Subcategorie_Click" runat="server">Werkplek</a></li>
+                        <li><a id="id8" OnServerClick="Subcategorie_Click" runat="server">Textiel</a></li>
                     </ul>
                 </nav>
             </section>

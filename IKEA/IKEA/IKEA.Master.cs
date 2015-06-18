@@ -46,5 +46,18 @@ namespace IKEA
                 lblUser.Text = "";
             }            
         }
+
+        /// <summary>
+        /// Subcategorie_click wordt aangeroepen als er op een van de hoofd-
+        /// categorieen in de menu-balk word geklikt. Het id van de <a> tag wordt
+        /// opgehaald en vervolgend opgeslagen in een sessie. Hiermee wordt bijgehouden
+        /// bij welke categorie je bevind.
+        /// </summary>
+        protected void Subcategorie_Click(object sender, EventArgs e)
+        {
+            string id = ((Control)sender).ID;
+            Session["hoofdcategorie"] = id.Substring(2);
+            Response.Redirect("Hoofdcategorie.aspx");
+        }
     }
 }
